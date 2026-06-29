@@ -2016,6 +2016,39 @@ p {
   background: rgba(255, 255, 255, 0.12);
   color: #ffffff;
 }
+.theme-move .move-hero::before {
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.08)), url('../img/move-logo-gpt2.png');
+  background-position: right 48%;
+}
+
+@media (max-width: 680px) {
+  .theme-move .move-hero::before {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.20)), url('../img/move-logo-gpt2.png');
+    background-position: center 52%;
+  }
+}
+.theme-headspa .headspa-hero::before {
+  background-image: linear-gradient(90deg, rgba(11, 21, 18, 0.50), rgba(11, 21, 18, 0.24), rgba(11, 21, 18, 0.08)), url('../img/headspa-logo-gpt.png');
+  background-position: center 45%;
+}
+
+@media (max-width: 680px) {
+  .theme-headspa .headspa-hero::before {
+    background-image: linear-gradient(180deg, rgba(11, 21, 18, 0.52), rgba(11, 21, 18, 0.22)), url('../img/headspa-logo-gpt.png');
+    background-position: center 50%;
+    background-size: 250% auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
