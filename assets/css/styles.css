@@ -1818,6 +1818,16 @@ p {
     background-position: center 42%;
   }
 }
+.privacy-page .hero--privacy::before {
+  background-image: linear-gradient(rgba(11, 21, 18, 0.50), rgba(11, 21, 18, 0.28)), url('../img/privacy-plant-hero.jpg');
+  background-position: center 46%;
+}
+
+@media (max-width: 680px) {
+  .privacy-page .hero--privacy::before {
+    background-position: center 48%;
+  }
+}
 .privacy-page .policy-note,
 .privacy-page .policy-section {
   margin-top: 14px;
