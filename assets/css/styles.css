@@ -311,6 +311,15 @@ textarea {
   line-height: 1.12;
 }
 
+@media (min-width: 961px) {
+  .home-hero .hero__content > * {
+    max-width: 760px;
+  }
+
+  .home-hero h1 {
+    white-space: nowrap;
+  }
+}
 .hero--video .lead {
   max-width: 560px;
   font-size: 18px;
@@ -1819,8 +1828,9 @@ p {
   }
 }
 .privacy-page .hero--privacy::before {
-  background-image: linear-gradient(rgba(11, 21, 18, 0.50), rgba(11, 21, 18, 0.28)), url('../img/privacy-plant-hero.jpg');
+  background-image: linear-gradient(rgba(11, 21, 18, 0.44), rgba(11, 21, 18, 0.24)), url('../img/privacy-plant-hero.jpg');
   background-position: center 46%;
+  background-size: cover;
 }
 
 @media (max-width: 680px) {
