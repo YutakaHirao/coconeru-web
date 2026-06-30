@@ -360,8 +360,39 @@ textarea {
   }
 
   .home-service-card .actions,
-  .product-card .button {
+  .store-page .product-card .button {
     margin-top: auto;
+  }
+  .store-page .product-card h3 {
+    min-height: 56px;
+  }
+
+  .store-page .product-card .muted {
+    min-height: 108px;
+  }
+
+  .booking-card img {
+    height: 220px;
+    aspect-ratio: auto;
+    object-fit: cover;
+  }
+
+  .theme-move .image-panel--move-studio img {
+    height: 280px;
+    aspect-ratio: auto;
+    object-fit: cover;
+  }
+
+  .business-page .grid--2 .card > img {
+    height: 230px;
+    aspect-ratio: auto;
+    object-fit: cover;
+  }
+
+  .menu-page .grid--2 > .card > img {
+    height: 260px;
+    aspect-ratio: auto;
+    object-fit: cover;
   }
 
   .grid--4 > .card > img {
