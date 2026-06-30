@@ -394,6 +394,27 @@ textarea {
     aspect-ratio: auto;
     object-fit: cover;
   }
+  .access-page .grid--2 > .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .access-page .grid--2 > .card > .card__body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+
+  .access-page .grid--2 > .card .actions {
+    margin-top: auto;
+  }
+
+  .store-page .section--muted .image-panel img {
+    height: 280px;
+    aspect-ratio: auto;
+    object-fit: cover;
+  }
 
   .grid--4 > .card > img {
     height: 190px;
