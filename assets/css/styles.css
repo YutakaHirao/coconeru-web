@@ -1828,7 +1828,7 @@ p {
   }
 }
 .privacy-page .hero--privacy::before {
-  background-image: linear-gradient(rgba(11, 21, 18, 0.44), rgba(11, 21, 18, 0.24)), url('../img/privacy-plant-hero.jpg');
+  background-image: linear-gradient(rgba(11, 21, 18, 0.44), rgba(11, 21, 18, 0.24)), url('../img/privacy-plant-hero-v2.jpg');
   background-position: center 46%;
   background-size: cover;
 }
