@@ -2174,6 +2174,24 @@ p {
   }
 }
 @media (min-width: 681px) and (max-width: 1023px) {
+  /* Tablet-specific Move facility gallery. */
+  .theme-move .gallery {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+  }
+
+  .theme-move .gallery img,
+  .theme-move .gallery-frame {
+    height: 240px;
+    min-height: 0;
+    aspect-ratio: auto;
+  }
+
+  .theme-move .gallery img:first-child {
+    grid-row: auto;
+  }
+}
+@media (min-width: 681px) and (max-width: 1023px) {
   /* Tablet-specific Move hero crop. */
   .theme-move .move-hero::before {
     background-position: 62% 52%;
