@@ -333,6 +333,71 @@ textarea {
   background-position: center 45%;
 }
 
+@media (min-width: 681px) and (max-width: 1023px) {
+  /* Tablet layout tuning without changing the mobile breakpoint. */
+  .home-service-card,
+  .home-access-section .card,
+  .product-card,
+  .grid--4 > .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .home-service-card > img {
+    height: 230px;
+    aspect-ratio: auto;
+    object-fit: cover;
+  }
+
+  .home-service-card > .card__body,
+  .home-access-section .card__body,
+  .product-card .card__body,
+  .grid--4 > .card .card__body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+
+  .home-service-card .actions,
+  .product-card .button {
+    margin-top: auto;
+  }
+
+  .grid--4 > .card > img {
+    height: 190px;
+    aspect-ratio: auto;
+    object-fit: cover;
+  }
+
+  .product-card > img {
+    height: 220px;
+    aspect-ratio: auto;
+    object-fit: contain;
+  }
+
+  .grid--4,
+  .product-grid {
+    align-items: stretch;
+    grid-auto-rows: 1fr;
+  }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+  .store-page .product-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .store-page .product-card .card__body {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 681px) and (max-width: 739px) {
+  .store-page .product-grid > .product-card:last-child {
+    grid-column: 1 / -1;
+  }
+}
 @media (max-width: 680px) {
   .hero--menu::before {
     background-position: center 42%;
