@@ -415,6 +415,15 @@ textarea {
     aspect-ratio: auto;
     object-fit: cover;
   }
+  .hero.home-hero {
+    min-height: 30vh;
+    max-height: 400px;
+  }
+
+  .home-hero .hero__content {
+    padding-top: 38px;
+    padding-bottom: 26px;
+  }
 
   .grid--4 > .card > img {
     height: 190px;
