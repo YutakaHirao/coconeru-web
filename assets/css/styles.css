@@ -415,6 +415,12 @@ textarea {
     aspect-ratio: auto;
     object-fit: cover;
   }
+  /* Head Spa concept image. */
+  .theme-headspa .feature-row .image-panel img {
+    height: 240px;
+    aspect-ratio: auto;
+    object-fit: cover;
+  }
   .hero.home-hero {
     min-height: 30vh;
     max-height: 400px;
