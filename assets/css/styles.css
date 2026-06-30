@@ -2173,6 +2173,12 @@ p {
     background-position: center 52%;
   }
 }
+@media (min-width: 681px) and (max-width: 1023px) {
+  /* Tablet-specific Move hero crop. */
+  .theme-move .move-hero::before {
+    background-position: 62% 52%;
+  }
+}
 .theme-headspa .headspa-hero::before {
   background-image: linear-gradient(90deg, rgba(11, 21, 18, 0.50), rgba(11, 21, 18, 0.24), rgba(11, 21, 18, 0.08)), url('../img/headspa-logo-gpt.png');
   background-position: center 45%;
