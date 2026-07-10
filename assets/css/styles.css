@@ -660,6 +660,26 @@ p {
   line-height: 1.8;
 }
 
+.home-path-actions__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 8px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 13.5px;
+  letter-spacing: 0.04em;
+}
+
+.home-path-actions__meta span {
+  white-space: nowrap;
+}
+
+.home-path-actions__meta span:not(:first-child)::before {
+  content: "・";
+  margin-right: 8px;
+  opacity: 0.5;
+}
+
 .home-path-actions__buttons {
   display: flex;
   flex-wrap: wrap;
