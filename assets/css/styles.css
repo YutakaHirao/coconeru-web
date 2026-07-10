@@ -1,38 +1,54 @@
 ﻿:root {
-  --ink: #16211f;
-  --text: #25322f;
-  --muted: #64736f;
-  --forest: #214f3f;
+  --ink: #17221e;
+  --text: #2a3532;
+  --muted: #68746f;
+  --forest: #1e4a39;
   --leaf: #7ea48b;
-  --terra: #3f7558;
+  --terra: #35604b;
   --sky: #6f8f83;
-  --paper: #f6f8f3;
-  --mist: #eef5ee;
+  --paper: #f7f6f0;
+  --mist: #eef0e7;
   --white: #ffffff;
-  --line: #d8e0da;
-  --shadow: 0 16px 40px rgba(22, 33, 31, 0.12);
-  --radius: 8px;
+  --line: #dcded3;
+  --brass: #9d8a5e;
+  --shadow: 0 28px 64px rgba(23, 33, 30, 0.1);
+  --radius: 2px;
   --max: 1120px;
+  --font-display: "Shippori Mincho", "Noto Serif JP", "Yu Mincho", "YuMincho",
+    "Hiragino Mincho ProN", serif;
+  --font-latin: "Cormorant Garamond", "Times New Roman", serif;
 }
+/* CoconeRu. Move = 朝の光のフレンドリーライト。
+   「運動をもっと始めやすく、もっと続けやすく」 */
 .theme-move {
-  --ink: #111111;
-  --text: #1f1f1f;
-  --muted: #666666;
-  --forest: #111111;
-  --leaf: #2a2a2a;
-  --terra: #111111;
+  --ink: #29332c;
+  --text: #3c463f;
+  --muted: #78827a;
+  --forest: #d97a3c;
+  --leaf: #e59a63;
+  --terra: #c2661f;
   --sky: #8a8a8a;
-  --paper: #f7f7f5;
-  --mist: #eeeeec;
-  --line: #d8d8d2;
-  --shadow: 0 24px 80px rgba(0, 0, 0, 0.16);
+  --paper: #fcfaf4;
+  --mist: #f5efe2;
+  --line: #e7e0cf;
+  --shadow: 0 24px 60px rgba(84, 62, 30, 0.12);
 }
 
+/* CoconeRu. (Head Spa) = 夜の森のダークラグジュアリー。
+   「明日の睡眠は、今日しか作れない」 */
 .theme-headspa {
-  --paper: #e3f1e4;
-  --mist: #cfe6d1;
-  --line: #b4cfb8;
-  background: #e3f1e4;
+  --ink: #f1ede0;
+  --text: #d3d7ca;
+  --muted: #98a29a;
+  --forest: #2e6a51;
+  --leaf: #7ea48b;
+  --terra: #b7a374;
+  --sky: #6f8f83;
+  --paper: #0f1713;
+  --mist: #141e18;
+  --line: rgba(241, 237, 224, 0.16);
+  --shadow: 0 28px 64px rgba(0, 0, 0, 0.45);
+  background: #0f1713;
 }
 
 * {
@@ -49,7 +65,8 @@ body {
   background: var(--paper);
   font-family: "Noto Serif JP", "Yu Mincho", "YuMincho", "Hiragino Mincho ProN",
     "Hiragino Sans", "Yu Gothic", Meiryo, serif;
-  line-height: 1.8;
+  line-height: 1.9;
+  letter-spacing: 0.02em;
 }
 
 img {
@@ -104,9 +121,13 @@ textarea {
   backdrop-filter: blur(16px);
 }
 
+main [id] {
+  scroll-margin-top: 92px;
+}
+
 .header-inner {
   width: min(var(--max), calc(100% - 40px));
-  min-height: 72px;
+  min-height: 76px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -120,7 +141,9 @@ textarea {
   gap: 10px;
   color: var(--ink);
   text-decoration: none;
-  font-weight: 700;
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: 0.05em;
 }
 
 .brand-logo {
@@ -136,13 +159,29 @@ textarea {
 .site-nav {
   display: flex;
   align-items: center;
-  gap: 20px;
-  font-size: 14px;
+  gap: 24px;
+  font-size: 13.5px;
 }
 
 .site-nav a {
+  position: relative;
+  padding: 4px 0;
   color: var(--ink);
+  letter-spacing: 0.08em;
   text-decoration: none;
+}
+
+.site-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.3s ease;
 }
 
 .site-nav a:hover,
@@ -150,10 +189,44 @@ textarea {
   color: var(--terra);
 }
 
+.site-nav a:hover::after,
+.site-nav a[aria-current="page"]::after {
+  transform: scaleX(1);
+}
+
 .header-actions {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0 13px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-decoration: none;
+  transition: border-color 0.3s ease;
+}
+
+.lang-switch:hover {
+  border-color: currentColor;
+}
+
+.theme-headspa .lang-switch {
+  border-color: rgba(241, 237, 224, 0.3);
+}
+
+.theme-headspa .lang-switch:hover {
+  border-color: rgba(241, 237, 224, 0.7);
 }
 
 .nav-toggle {
@@ -177,22 +250,27 @@ textarea {
 
 .button {
   display: inline-flex;
-  min-height: 44px;
+  min-height: 46px;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 10px 18px;
+  padding: 11px 26px;
   border: 1px solid var(--forest);
   border-radius: var(--radius);
   color: var(--white);
   background: var(--forest);
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 500;
+  font-size: 14.5px;
+  letter-spacing: 0.14em;
   line-height: 1.25;
+  transition: background-color 0.25s ease, border-color 0.25s ease,
+    color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
 }
 
 .button:hover {
   transform: translateY(-1px);
+  box-shadow: 0 12px 28px rgba(23, 33, 30, 0.16);
 }
 
 .button--light {
@@ -308,7 +386,7 @@ textarea {
 
 .hero.hero--video h1 {
   font-size: 52px;
-  line-height: 1.12;
+  line-height: 1.26;
 }
 
 @media (min-width: 961px) {
@@ -486,11 +564,25 @@ textarea {
   white-space: nowrap;
 }
 .eyebrow {
-  margin: 0 0 14px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0 0 18px;
   color: var(--terra);
-  font-size: 13px;
-  font-weight: 700;
+  font-family: var(--font-latin);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.32em;
   text-transform: uppercase;
+}
+
+.eyebrow::before {
+  content: "";
+  width: 30px;
+  height: 1px;
+  flex: 0 0 auto;
+  background: currentColor;
+  opacity: 0.55;
 }
 
 .hero .eyebrow {
@@ -502,17 +594,34 @@ h2,
 h3 {
   margin: 0;
   color: var(--ink);
-  line-height: 1.3;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-feature-settings: "palt" 1;
+  letter-spacing: 0.05em;
+  line-height: 1.42;
+  text-wrap: balance;
+  word-break: auto-phrase;
+}
+
+/* 文節を分断させないための改行制御ユーティリティ */
+.phrase {
+  display: inline-block;
+}
+
+.nobr {
+  white-space: nowrap;
 }
 
 .hero h1 {
   color: var(--white);
+  font-weight: 500;
   font-size: 64px;
-  line-height: 1.12;
+  letter-spacing: 0.08em;
+  line-height: 1.22;
 }
 
 h2 {
-  font-size: 34px;
+  font-size: 33px;
 }
 
 h3 {
@@ -535,7 +644,7 @@ p {
 .home-path-actions {
   background: var(--paper);
   border-bottom: 1px solid rgba(38, 68, 59, 0.12);
-  padding: 24px 0;
+  padding: 40px 0;
 }
 
 .home-path-actions__inner {
@@ -567,7 +676,7 @@ p {
 }
 
 .section {
-  padding: 86px 0;
+  padding: 104px 0;
 }
 
 .section--tight {
@@ -600,18 +709,22 @@ p {
 }
 
 .theme-headspa .section:not(.section--dark):not(.section--muted) {
-  background:
-    linear-gradient(115deg, rgba(177, 207, 181, 0.68), rgba(227, 241, 228, 0.94) 42%, rgba(207, 230, 209, 0.62));
+  background: var(--paper);
 }
 
 .theme-headspa .section--muted {
   background:
-    linear-gradient(115deg, rgba(164, 198, 170, 0.72), rgba(207, 230, 209, 0.98) 48%, rgba(227, 241, 228, 0.82));
+    linear-gradient(160deg, #17231c, #121b16 55%, #141e18);
 }
 
 .theme-headspa .card {
-  border-color: rgba(33, 79, 63, 0.18);
-  background: #fbfff8;
+  border-color: rgba(241, 237, 224, 0.14);
+  background: #17211b;
+}
+
+.theme-headspa .card:hover {
+  border-color: rgba(183, 163, 116, 0.45);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.55);
 }
 
 .theme-headspa .section--dark .card--dark {
@@ -629,11 +742,12 @@ p {
 
 .theme-headspa .cta-band {
   color: rgba(255, 255, 255, 0.9);
-  background: linear-gradient(135deg, #14382d, #2f684f);
+  border: 1px solid rgba(183, 163, 116, 0.35);
+  background: linear-gradient(135deg, #10231b, #1e4437);
 }
 
 .theme-headspa .cta-band .eyebrow {
-  color: #d7eadb;
+  color: #c8b58a;
 }
 
 .theme-headspa .cta-band p {
@@ -674,9 +788,9 @@ p {
 .section__head {
   display: grid;
   grid-template-columns: minmax(0, 0.8fr) minmax(280px, 1fr);
-  gap: 42px;
+  gap: 48px;
   align-items: end;
-  margin-bottom: 38px;
+  margin-bottom: 52px;
 }
 
 .section__head p {
@@ -690,7 +804,7 @@ p {
 
 .grid {
   display: grid;
-  gap: 22px;
+  gap: 26px;
 }
 
 .grid--2 {
@@ -710,10 +824,26 @@ p {
   border-radius: var(--radius);
   background: var(--white);
   overflow: hidden;
+  transition: transform 0.35s ease, box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(30, 74, 57, 0.28);
+  box-shadow: var(--shadow);
+}
+
+.card > img {
+  transition: transform 0.7s ease;
+}
+
+.card:hover > img {
+  transform: scale(1.035);
 }
 
 .card__body {
-  padding: 24px;
+  padding: 28px;
 }
 
 .service-logo {
@@ -796,35 +926,41 @@ p {
   line-height: 1.8;
 }
 .theme-move .site-header {
-  background: rgba(248, 248, 246, 0.96);
-  border-bottom-color: #d6d6d0;
+  background: rgba(252, 250, 244, 0.94);
+  border-bottom-color: #eae3d2;
 }
 
 .theme-move .brand-mark {
-  border-color: rgba(17, 17, 17, 0.18);
+  border-color: rgba(41, 51, 44, 0.18);
   background: #ffffff;
 }
 
 .theme-move .site-nav a:hover,
 .theme-move .site-nav a[aria-current="page"] {
-  color: #000000;
+  color: var(--terra);
 }
 
 .theme-move .button {
-  border-color: #111111;
-  background: #111111;
+  border-color: var(--forest);
+  background: var(--forest);
   color: #ffffff;
+}
+
+.theme-move .button:hover {
+  border-color: var(--terra);
+  background: var(--terra);
 }
 
 .theme-move .button--light {
   border-color: #ffffff;
   background: #ffffff;
-  color: #111111;
+  color: #29332c;
 }
 
 .theme-move .button--outline {
   background: transparent;
-  color: #111111;
+  border-color: rgba(194, 102, 31, 0.55);
+  color: var(--terra);
 }
 
 
@@ -846,7 +982,22 @@ p {
 
 .theme-move .section--dark,
 .theme-move .cta-band {
-  background: #111111;
+  background: #30322b;
+}
+
+.theme-move .cta-band {
+  background: linear-gradient(135deg, #cf6c2c, #e08a48);
+}
+
+.theme-move .cta-band .eyebrow,
+.theme-move .cta-band p {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.theme-move .cta-band .button--light {
+  border-color: #ffffff;
+  background: #ffffff;
+  color: #c2661f;
 }
 
 .theme-move .card--dark {
@@ -865,8 +1016,8 @@ p {
 }
 
 .theme-headspa .headspa-logo-strip {
-  border-color: rgba(33, 79, 63, 0.18);
-  background: rgba(251, 255, 248, 0.88);
+  border-color: rgba(241, 237, 224, 0.2);
+  background: #f4f1e7;
 }
 
 .theme-headspa .headspa-logo-strip img {
@@ -875,7 +1026,7 @@ p {
 
 .theme-move .kicker,
 .theme-move .eyebrow {
-  color: #111111;
+  color: var(--terra);
 }
 
 .theme-move .hero .eyebrow {
@@ -982,6 +1133,11 @@ p {
   background: rgba(255, 255, 255, 0.08);
 }
 
+.card--dark:hover {
+  border-color: rgba(255, 255, 255, 0.38);
+  box-shadow: 0 28px 64px rgba(0, 0, 0, 0.32);
+}
+
 .card--dark h3 {
   color: var(--white);
 }
@@ -996,21 +1152,27 @@ p {
 
 .kicker {
   color: var(--terra);
-  font-size: 13px;
-  font-weight: 700;
+  font-family: var(--font-latin);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
 }
 
 .step-label {
   display: inline-flex;
-  width: 34px;
-  height: 34px;
+  width: 40px;
+  height: 40px;
   align-items: center;
   justify-content: center;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
+  border: 1px solid rgba(30, 74, 57, 0.5);
   border-radius: 999px;
-  color: var(--white);
-  background: var(--forest);
-  font-weight: 700;
+  color: var(--forest);
+  background: transparent;
+  font-family: var(--font-latin);
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .interaction-note {
@@ -1021,7 +1183,8 @@ p {
 }
 
 .section--dark .step-label {
-  background: var(--terra);
+  border-color: rgba(255, 255, 255, 0.55);
+  color: var(--white);
 }
 
 .feature-row {
@@ -1148,7 +1311,8 @@ p {
 
 .info-list dt {
   color: var(--muted);
-  font-weight: 700;
+  font-weight: 500;
+  letter-spacing: 0.08em;
 }
 
 .info-list dd {
@@ -1249,9 +1413,9 @@ p {
 .cta-band {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
-  gap: 28px;
+  gap: 36px;
   align-items: center;
-  padding: 32px;
+  padding: 56px 52px;
   border-radius: var(--radius);
   color: var(--white);
   background: var(--ink);
@@ -2229,3 +2393,364 @@ p {
 
 
 
+
+/* Refined-minimal refresh: scroll reveal (class added by site.js only). */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* ===== Renewal 2026-07: CoconeRu. dark luxury layer ===== */
+.theme-headspa .site-header {
+  border-bottom-color: rgba(241, 237, 224, 0.12);
+  background: rgba(13, 20, 16, 0.88);
+}
+
+.theme-headspa .hero {
+  background: #0b120e;
+}
+
+.theme-headspa .skip-link {
+  color: #10231b;
+  background: var(--ink);
+}
+
+.theme-headspa .nav-toggle {
+  border-color: rgba(241, 237, 224, 0.3);
+  background: transparent;
+  color: var(--ink);
+}
+
+.theme-headspa .site-footer {
+  border-top: 1px solid rgba(241, 237, 224, 0.1);
+  background: #0a110d;
+}
+
+.theme-headspa .button--light {
+  color: #14261e;
+}
+
+.theme-headspa .button--outline {
+  border-color: rgba(241, 237, 224, 0.45);
+  color: var(--ink);
+}
+
+.theme-headspa .button--outline:hover {
+  border-color: rgba(183, 163, 116, 0.8);
+  background: rgba(183, 163, 116, 0.12);
+}
+
+.theme-headspa .step-label {
+  border-color: rgba(183, 163, 116, 0.6);
+  color: #c8b58a;
+}
+
+.theme-headspa .faq-list details,
+.theme-headspa .quote,
+.theme-headspa .policy-note,
+.theme-headspa .policy-section {
+  border-color: rgba(241, 237, 224, 0.14);
+  background: #17211b;
+}
+
+.theme-headspa .faq-list details > div {
+  color: var(--muted);
+}
+
+.theme-headspa .price-table {
+  background: #151f19;
+}
+
+.theme-headspa .interaction-note {
+  border-left-color: #b7a374;
+  background: rgba(183, 163, 116, 0.08);
+}
+
+.theme-headspa .breadcrumb a {
+  color: #9fc0ae;
+}
+
+.theme-headspa .move-logo-strip {
+  border-color: rgba(241, 237, 224, 0.2);
+  background: #f4f1e7;
+}
+
+.theme-headspa .card--headspa-access {
+  border-color: rgba(183, 163, 116, 0.4);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.4);
+}
+
+.theme-headspa ::selection {
+  color: #10231b;
+  background: #c8b58a;
+}
+
+/* ===== Renewal 2026-07: Move friendly-light layer ===== */
+.theme-move {
+  font-family: "Zen Kaku Gothic New", "Hiragino Sans", "Yu Gothic", Meiryo,
+    sans-serif;
+  letter-spacing: 0.01em;
+}
+
+.theme-move h1,
+.theme-move h2,
+.theme-move h3,
+.theme-move .brand {
+  font-family: "Zen Kaku Gothic New", "Hiragino Sans", "Yu Gothic", Meiryo,
+    sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.theme-move .eyebrow,
+.theme-move .kicker {
+  font-family: inherit;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+}
+
+.theme-move .button {
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.theme-move .move-trial-strip {
+  border-bottom: 1px solid #f2ddc0;
+  background: #fdf3e4;
+}
+
+.theme-move .move-trial-strip .eyebrow,
+.theme-move .move-trial-strip .kicker {
+  color: var(--terra);
+}
+
+.theme-move .card--move {
+  border-color: var(--line);
+}
+
+.theme-move .staff-profile {
+  border-color: var(--line);
+}
+
+.theme-move .step-label {
+  border-color: rgba(217, 122, 60, 0.55);
+  color: #c2661f;
+}
+
+/* Home: two worlds side by side (dark rest / light move). */
+.home-service-card--headspa {
+  border-color: #0d1511;
+  background: #101a15;
+}
+
+.home-service-card--headspa h3 {
+  color: #f1ede0;
+}
+
+.home-service-card--headspa .muted {
+  color: #a8b2a7;
+}
+
+.home-service-card--headspa .kicker {
+  color: #c8b58a;
+}
+
+.home-service-card--headspa .service-logo {
+  padding: 10px 14px;
+  border-radius: 2px;
+  background: #f4f1e7;
+}
+
+.home-service-card--headspa .button--outline {
+  border-color: rgba(241, 237, 224, 0.5);
+  color: #f1ede0;
+}
+
+.home-service-card--headspa .button--outline:hover {
+  background: rgba(241, 237, 224, 0.1);
+}
+
+.home-service-card--move {
+  border-color: #eee0c9;
+  background: #fffaf1;
+}
+
+.home-service-card--move .kicker {
+  color: #c2661f;
+}
+
+.button--move,
+.home-path-actions .button--move {
+  border-radius: 999px;
+  border-color: #d97a3c;
+  background: #d97a3c;
+  color: #ffffff;
+}
+
+.button--move:hover {
+  border-color: #c2661f;
+  background: #c2661f;
+}
+
+.home-service-card--move .button--outline {
+  border-radius: 999px;
+  border-color: rgba(194, 102, 31, 0.5);
+  color: #c2661f;
+}
+
+/* Booking: the same two-tone entrance. */
+.booking-card--headspa {
+  border-color: #101a15;
+  background: #101a15;
+}
+
+.booking-card--headspa h2,
+.booking-card--headspa h3 {
+  color: #f1ede0;
+}
+
+.booking-card--headspa p,
+.booking-card--headspa .muted {
+  color: #a8b2a7;
+}
+
+.booking-card--headspa .kicker {
+  color: #c8b58a;
+}
+
+.booking-card--move {
+  border-color: #eee0c9;
+  background: #fffaf1;
+}
+
+.booking-card--move .kicker {
+  color: #c2661f;
+}
+
+.booking-card--move .button {
+  border-radius: 999px;
+  border-color: #d97a3c;
+  background: #d97a3c;
+}
+
+.booking-card--move .button:hover {
+  border-color: #c2661f;
+  background: #c2661f;
+}
+
+/* Renewal: hero headline sizing for the longer theme copy (desktop only). */
+@media (min-width: 961px) {
+  .hero.home-hero h1 {
+    font-size: 47px;
+  }
+
+  .theme-move .hero--center h1 {
+    font-size: 54px;
+  }
+
+  .theme-headspa .headspa-hero h1 {
+    font-size: 58px;
+  }
+}
+
+.theme-headspa .headspa-logo-strip p,
+.theme-headspa .move-logo-strip p {
+  color: #5c665e;
+}
+
+/* Mobile typography refinements. */
+.mobile-only-break {
+  display: none;
+}
+
+@media (max-width: 680px) {
+  .mobile-only-break {
+    display: inline;
+  }
+
+  .hero.home-hero h1 {
+    font-size: clamp(19px, 6.6vw, 28px);
+  }
+}
+
+@media (max-width: 680px) {
+  h2 {
+    font-size: 23px;
+  }
+
+  .hero h1 {
+    letter-spacing: 0.05em;
+  }
+
+  .hero.home-hero h1 {
+    font-size: clamp(19px, 6.4vw, 28px);
+    letter-spacing: 0.04em;
+  }
+}
+
+@media (max-width: 680px) {
+  .cta-band {
+    padding: 36px 22px;
+    gap: 24px;
+  }
+}
+
+/* SEO/AIO renewal: supplementary content blocks. */
+.home-path-actions__factline {
+  margin-top: 6px;
+  font-size: 15px;
+  color: var(--muted);
+}
+
+.access-intro {
+  max-width: 820px;
+  margin: 8px 0 34px;
+}
+
+.access-intro h2 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.access-guide {
+  border-top: 1px solid var(--line);
+}
+
+.access-guide > .container > h2 {
+  margin-bottom: 14px;
+}
+
+.access-guide > .container > p {
+  max-width: 820px;
+  margin-bottom: 28px;
+  color: var(--muted);
+}
+
+.access-guide .card__body a {
+  color: var(--terra);
+}
+
+.access-note {
+  margin-top: 26px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.7;
+}

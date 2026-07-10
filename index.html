@@ -3,19 +3,31 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>健康をアップデートするヘッドスパ・整体ピラティス | CoconeRu.</title>
-    <meta name="description" content="CoconeRu.は横須賀中央で、睡眠特化ドライヘッドスパと整体×ピラティスを組み合わせ、休息・回復・運動習慣の循環で健康をアップデートします。">
+    <script>
+      // ENを選んだ再訪者はトップ到達時に英語ページへ（英語ページの「日本語」リンクで解除される）
+      (function () { try { if (localStorage.getItem("coconeru-lang") === "en") location.replace("en/"); } catch (e) {} })();
+    </script>
+    <title>横須賀中央のヘッドスパと整体×ピラティス｜CoconeRu.</title>
+    <meta name="description" content="横須賀中央駅から徒歩4分。頭や首肩をほぐすヘッドマッサージのようなドライヘッドスパと、マンツーマンで通える整体×ピラティスのパーソナルトレーニング。仕事帰りや週末に、ほっと落ち着ける静かな空間で、休息と体づくりのどちらからでも。">
     <link rel="canonical" href="https://coconeru.com/">
+    <link rel="alternate" hreflang="ja" href="https://coconeru.com/">
+    <link rel="alternate" hreflang="en" href="https://coconeru.com/en/">
+    <link rel="alternate" hreflang="x-default" href="https://coconeru.com/">
     <link rel="icon" href="assets/img/favicon.ico">
     <link rel="preload" as="image" href="assets/img/headspa-hero.jpg">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="健康をアップデートするヘッドスパ・整体ピラティス | CoconeRu.">
-    <meta property="og:description" content="眠りを整え、身体を動かし、日常の回復力を上げる。CoconeRu.の健康アップデート。">
+    <meta property="og:title" content="横須賀中央のヘッドスパと整体×ピラティス｜CoconeRu.">
+    <meta property="og:description" content="横須賀中央駅徒歩4分。ヘッドマッサージのようなドライヘッドスパと、整体×ピラティスのパーソナルトレーニング。睡眠は日々の健康のため、運動は未来の健康のため。">
     <meta property="og:url" content="https://coconeru.com/">
     <meta property="og:image" content="https://coconeru.com/assets/img/headspa-hero.jpg">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="stylesheet" href="assets/css/styles.css?v=20260630-ipad-7">
-    <script defer src="assets/js/site.js"></script>
+    <meta property="og:site_name" content="CoconeRu.">
+    <meta property="og:locale" content="ja_JP">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600&family=Noto+Serif+JP:wght@400;500;600&family=Cormorant+Garamond:wght@500;600&family=Zen+Kaku+Gothic+New:wght@500;700&display=swap">
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260710-lang-1">
+    <script defer src="assets/js/site.js?v=20260710-lang-1"></script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -43,10 +55,14 @@
             "@type": "HealthAndBeautyBusiness",
             "@id": "https://coconeru.com/#headspa",
             "name": "CoconeRu.",
+            "description": "睡眠は、日々の健康のため。横須賀中央駅徒歩4分の睡眠特化ドライヘッドスパ。頭・首・肩をほぐすヘッドマッサージで、今夜の眠りを深くします。",
             "url": "https://coconeru.com/headspa/",
             "image": "https://coconeru.com/assets/img/headspa-hero.jpg",
             "telephone": "+81-90-7186-4738",
             "priceRange": "¥¥",
+            "parentOrganization": { "@id": "https://coconeru.com/#organization" },
+            "sameAs": ["https://www.instagram.com/coconeru.yokosuka/", "https://beauty.hotpepper.jp/kr/slnH000759639/"],
+            "hasMap": "https://www.google.com/maps/search/?api=1&query=%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E6%A8%AA%E9%A0%88%E8%B3%80%E5%B8%82%E8%8B%A5%E6%9D%BE%E7%94%BA3%E4%B8%81%E7%9B%AE4+%E3%83%95%E3%82%A1%E3%83%BC%E3%82%B9%E3%83%88%E3%83%93%E3%83%AB3F",
             "address": {
               "@type": "PostalAddress",
               "addressCountry": "JP",
@@ -55,6 +71,7 @@
               "addressLocality": "横須賀市",
               "streetAddress": "若松町3丁目4 ファーストビル3F"
             },
+            "geo": { "@type": "GeoCoordinates", "latitude": 35.27874, "longitude": 139.673584 },
             "openingHoursSpecification": {
               "@type": "OpeningHoursSpecification",
               "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
@@ -66,10 +83,14 @@
             "@type": "HealthClub",
             "@id": "https://coconeru.com/#move",
             "name": "CoconeRu. Move",
+            "description": "運動は、未来の健康のため。横須賀中央駅徒歩4分、整体×ピラティスのパーソナルトレーニング。姿勢・肩こりから体づくりまでマンツーマンで。",
             "url": "https://coconeru.com/move/",
             "image": "https://coconeru.com/assets/img/move-hero.jpg",
             "telephone": "+81-90-7186-4738",
             "priceRange": "¥¥",
+            "parentOrganization": { "@id": "https://coconeru.com/#organization" },
+            "sameAs": ["https://www.instagram.com/coconeru.move/"],
+            "hasMap": "https://www.google.com/maps/search/?api=1&query=%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E6%A8%AA%E9%A0%88%E8%B3%80%E5%B8%82%E5%A4%A7%E6%BB%9D%E7%94%BA2-11+%E3%83%A4%E3%82%B7%E3%83%9E%E3%83%93%E3%83%AB2F",
             "address": {
               "@type": "PostalAddress",
               "postalCode": "238-0008",
@@ -78,6 +99,7 @@
               "addressLocality": "横須賀市",
               "streetAddress": "大滝町2-11 ヤシマビル2F"
             },
+            "geo": { "@type": "GeoCoordinates", "latitude": 35.281563, "longitude": 139.67012 },
             "openingHoursSpecification": {
               "@type": "OpeningHoursSpecification",
               "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
@@ -88,6 +110,44 @@
         ]
       }
     </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          { "@id": "https://coconeru.com/#organization", "knowsLanguage": ["ja", "en"] },
+          { "@id": "https://coconeru.com/#headspa", "areaServed": ["横須賀市", "横須賀中央", "三浦半島", "Yokosuka Naval Base"], "knowsLanguage": ["ja", "en"] },
+          { "@id": "https://coconeru.com/#move", "areaServed": ["横須賀市", "横須賀中央", "三浦半島", "Yokosuka Naval Base"], "knowsLanguage": ["ja", "en"] },
+          {
+            "@type": "Service",
+            "@id": "https://coconeru.com/#service-headspa-massage",
+            "name": "ドライヘッドスパ（ヘッドマッサージ）",
+            "serviceType": "マッサージ／ヘッドマッサージ／リラクゼーション",
+            "provider": { "@id": "https://coconeru.com/#headspa" },
+            "areaServed": [
+              { "@type": "City", "name": "横須賀市" },
+              { "@type": "Place", "name": "横須賀中央" },
+              { "@type": "Place", "name": "三浦半島" },
+              { "@type": "Place", "name": "米海軍横須賀基地（Yokosuka Naval Base）" }
+            ],
+            "description": "頭・目・首肩をほぐすドライヘッドスパ。眼精疲労や首肩のこり、睡眠の質が気になる方へのリラクゼーション。横須賀中央駅徒歩4分。"
+          },
+          {
+            "@type": "Service",
+            "@id": "https://coconeru.com/#service-move-personaltraining",
+            "name": "パーソナルトレーニング（整体×ピラティス）",
+            "serviceType": "パーソナルトレーニング／パーソナルジム／ダイエット／ピラティス／整体",
+            "provider": { "@id": "https://coconeru.com/#move" },
+            "areaServed": [
+              { "@type": "City", "name": "横須賀市" },
+              { "@type": "Place", "name": "横須賀中央" },
+              { "@type": "Place", "name": "三浦半島" }
+            ],
+            "description": "マンツーマンで通える整体×ピラティスのパーソナルトレーニング。姿勢改善・肩こり・体づくり（ダイエット）に対応。横須賀中央駅徒歩4分。"
+          }
+        ]
+      }
+    </script>
+      <meta name="theme-color" content="#f7f6f0">
   </head>
   <body>
     <a class="skip-link" href="#main">本文へ移動</a>
@@ -99,7 +159,7 @@
         </a>
         <button class="nav-toggle" type="button" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
         <nav class="site-nav" aria-label="主要ナビゲーション"><a href="headspa/index.html">Head Spa</a><a href="menu/index.html">メニュー</a><a href="store/index.html">ストア</a><a href="business/index.html">法人向け</a><a href="move/index.html">Move</a><a href="booking/index.html">予約</a><a href="access/index.html">アクセス</a></nav>
-        <div class="header-actions"><a class="button" href="booking/index.html">予約</a></div>
+        <div class="header-actions"><a class="lang-switch" href="en/index.html" lang="en" hreflang="en" aria-label="English">EN</a><a class="button" href="booking/index.html">予約</a></div>
       </div>
     </header>
 
@@ -109,16 +169,17 @@
           <source src="assets/video/home-hero.mp4" type="video/mp4">
         </video>
         <div class="hero__content">
-          <h1>眠りと動きで、<br>健康をアップデートする。</h1>
+          <h1><span class="phrase">睡眠は、</span><span class="phrase">日々の健康のため。</span><br><span class="phrase">運動は、</span><span class="phrase">未来の健康のため。</span></h1>
         </div>
       </section>
 
       <section class="home-path-actions" aria-label="整え方を選ぶ">
         <div class="container home-path-actions__inner">
-          <p class="home-path-actions__lead">CoconeRu.は「休む力」と「動く力」を整える場所です。ドライヘッドスパで眠りと回復の土台をつくり、Moveで姿勢と動作を整えることで、毎日の健康をアップデートしていきます。</p>
+          <p class="home-path-actions__lead">眠りは、今日の疲れをその日のうちにリセットするために。運動は、10年後も動ける身体をつくるために。CoconeRu.は、睡眠特化のドライヘッドスパと、始めやすい整体×ピラティスで、日々と未来の健康をひとつの習慣にします。</p>
+          <p class="home-path-actions__lead home-path-actions__factline">横須賀中央駅から徒歩4分、営業は10:00〜20:00。頭や首肩をほぐすヘッドマッサージのようなドライヘッドスパと、マンツーマンで通える整体×ピラティスのパーソナルトレーニング。仕事帰りや週末のリフレッシュに、カフェのようにほっと落ち着ける静かな空間でお迎えします。</p>
           <div class="home-path-actions__buttons">
-            <a class="button button--rest" href="headspa/index.html">休息から整える</a>
-            <a class="button button--move" href="move/index.html">動きから整える</a>
+            <a class="button button--rest" href="headspa/index.html">今日の眠りを整える</a>
+            <a class="button button--move" href="move/index.html">未来の身体を育てる</a>
           </div>
         </div>
       </section>
@@ -128,18 +189,18 @@
           <div class="section__head">
             <div>
               <p class="eyebrow">One Health Cycle</p>
-              <h2>CoconeRu.とMoveは、別々のサービスではなく同じ循環の両輪です。</h2>
+              <h2>日々の健康と、未来の健康。ふたつを、ひとつの循環に。</h2>
             </div>
-            <p>疲れた身体をただ休ませるだけでは、また同じ不調に戻りやすい。鍛えるだけでも、回復が追いつかなければ続きません。だからCoconeRu.は、眠り・回復・姿勢・運動をひとつの健康習慣として設計します。</p>
+            <p>疲れをためたまま頑張り続けることも、休むだけで身体を変えないことも、どちらも長くは続きません。だからCoconeRu.は、今夜の睡眠と今日の運動を、ひとつの健康習慣として設計します。</p>
           </div>
           <div class="grid grid--2">
             <article class="card home-service-card home-service-card--headspa">
               <img src="assets/img/business-hero-chatgpt.png" alt="CoconeRu.の休息をイメージした森のビジュアル" loading="lazy" width="1536" height="1024">
               <div class="card__body">
                 <img class="service-logo service-logo--mark" src="assets/img/logo-coconeru-full.svg" alt="CoconeRu.">
-                <p class="kicker">Rest / Recovery</p>
+                <p class="kicker">Sleep / Daily Health</p>
                 <h3>ドライヘッドスパ CoconeRu.</h3>
-                <p class="muted">頭・目・首肩の緊張をほどき、自律神経が休まりやすい状態へ。睡眠の質を上げ、翌日の動ける余白をつくります。</p>
+                <p class="muted">明日の睡眠は、今日しか作れない。頭・目・首肩をヘッドマッサージのようにゆっくりほぐし、深い眠りに入れる状態へ。眼精疲労や首肩のこりが気になる夜も、今夜の睡眠から日々の回復力を取り戻します。</p>
                 <div class="actions">
                   <a class="button" href="headspa/index.html">詳しく見る</a>
                   <a class="button button--outline" href="menu/index.html">メニュー</a>
@@ -150,9 +211,9 @@
               <img src="assets/img/move-hero.jpg" alt="CoconeRu. Moveのピラティス施術風景" loading="lazy" width="900" height="675">
               <div class="card__body">
                 <img class="service-logo" src="assets/img/logo-move-text-black.svg" alt="CoconeRu. Move">
-                <p class="kicker">Move / Conditioning</p>
+                <p class="kicker">Move / Future Health</p>
                 <h3>CoconeRu. Move</h3>
-                <p class="muted">整体で身体の使い方を見直し、ピラティスで支える力を育てます。不調を繰り返しにくい姿勢と動作へ導きます。</p>
+                <p class="muted">運動を、もっと始めやすく、もっと続けやすく。整体×ピラティスのパーソナルトレーニングで、姿勢や肩こりを整えながら10年後も動ける身体を育てます。ダイエットや体づくりの一歩にも、運動が苦手な方こそどうぞ。</p>
                 <div class="actions">
                   <a class="button button--move" href="move/index.html">詳しく見る</a>
                   <a class="button button--outline" href="move/menu/index.html">料金を見る</a>
@@ -212,9 +273,9 @@
             </div>
             <div>
               <p class="eyebrow">Interaction</p>
-              <h2>ヘッドスパはMoveの効果を受け取りやすくし、Moveはヘッドスパ後の良い状態を長持ちさせます。</h2>
-              <p class="lead">緊張が強いまま運動すると、身体はいつもの癖で動きます。逆に、動かないまま休むだけでは、疲れの原因になっている姿勢や使い方は変わりません。</p>
-              <p class="interaction-note">CoconeRu.で「回復しやすい状態」をつくり、Moveで「疲れにくい使い方」を身につける。その循環が、CoconeRu.の考える健康アップデートです。</p>
+              <h2>よく眠れた日は、身体が動く。よく動いた日は、深く眠れる。</h2>
+              <p class="lead">睡眠は日々の回復を支え、運動は未来の身体を支えます。緊張が強いまま運動しても身体はいつもの癖で動き、動かないまま休むだけでは疲れの原因は変わりません。</p>
+              <p class="interaction-note">CoconeRu.で「今日の疲れ」をその日のうちにリセットし、Moveで「未来の身体」を今日から育てる。その循環が、CoconeRu.の考える健康アップデートです。</p>
             </div>
           </div>
         </div>
@@ -259,8 +320,8 @@
           <div class="cta-band">
             <div>
               <p class="eyebrow">Booking</p>
-              <h2>今の状態から、必要な入口を選んでください。</h2>
-              <p>疲れが抜けない、眠りが浅い方はCoconeRu.へ。姿勢や動き方を変えたい方はMoveへ。どちらから始めても、健康アップデートの循環につながります。</p>
+              <h2><span class="phrase">今日の疲れには</span><span class="nobr">CoconeRu.を。</span><br class="mobile-only-break"><span class="phrase">未来の身体には</span><span class="nobr">Moveを。</span></h2>
+              <p>眠りが浅い、疲れが抜けない方はCoconeRu.へ。運動を始めたい、続けたい方はMoveへ。どちらから始めても、日々と未来の健康の循環につながります。</p>
             </div>
             <div class="actions">
               <a class="button button--light" href="booking/index.html">予約ページへ進む</a>
@@ -314,7 +375,7 @@
             </div>
           </div>
         </div>
-        <div class="footer-bottom"><span>&copy; CoconeRu.</span><span><a class="footer-legal" href="privacy/index.html">プライバシーポリシー</a> / Yokosuka, Kanagawa</span></div>
+        <div class="footer-bottom"><span>&copy; CoconeRu.</span><span><a class="footer-legal" href="privacy/index.html">個人情報の取り扱いについて</a> / Yokosuka, Kanagawa</span></div>
       </div>
     </footer>
   </body>
