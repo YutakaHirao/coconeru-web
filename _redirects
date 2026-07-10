@@ -1,16 +1,13 @@
-https://www.coconeru.com/* https://coconeru.com/:splat 301
-https://move.coconeru.com/ https://coconeru.com/move/ 301
-https://move.coconeru.com/move https://coconeru.com/move/ 301
-https://move.coconeru.com/menu https://coconeru.com/move/menu/ 301
-https://move.coconeru.com/staff https://coconeru.com/move/staff/ 301
-https://move.coconeru.com/207594255261-1 https://coconeru.com/move/ 301
-https://move.coconeru.com/* https://coconeru.com/move/:splat 301
+# ホスト単位の転送（www / move → coconeru.com）はCloudflareダッシュボードの
+# リダイレクトルールで設定する（Pagesの_redirectsは相対パスのみ対応のため）
 /home-1 / 301
 /headspa /headspa/ 301
 /menu /menu/ 301
 /move /move/ 301
 /move/menu /move/menu/ 301
 /move/staff /move/staff/ 301
+/move/move /move/ 301
+/move/207594255261-1 /move/ 301
 /access /access/ 301
 /business /business/ 301
 /faq /faq/ 301
