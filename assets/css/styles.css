@@ -2774,3 +2774,370 @@ p {
   color: var(--muted);
   line-height: 1.7;
 }
+
+/* ===== 横須賀の天気・気圧ページ ===== */
+.weather-page .hero--weather::before {
+  background-image: linear-gradient(rgba(11, 21, 18, 0.54), rgba(11, 21, 18, 0.30)), url('../img/headspa-hero.jpg');
+  background-position: center 40%;
+}
+
+.weather-panel {
+  display: grid;
+  grid-template-columns: minmax(240px, 1fr) 1.6fr;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.weather-now {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+  padding: 34px 30px;
+  background: var(--mist);
+  border-right: 1px solid var(--line);
+}
+
+.weather-now__icon {
+  font-size: 56px;
+  line-height: 1;
+}
+
+.weather-now__main {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.weather-now__temp {
+  font-family: var(--font-latin);
+  font-size: 56px;
+  line-height: 1;
+  color: var(--ink);
+}
+
+.weather-now__temp small {
+  font-size: 26px;
+  color: var(--muted);
+}
+
+.weather-now__desc {
+  font-size: 17px;
+  color: var(--text);
+}
+
+.weather-now__meta {
+  margin: 0;
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+}
+
+.weather-now__meta div {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+}
+
+.weather-now__meta dt {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.weather-now__meta dd {
+  margin: 0;
+  font-size: 15px;
+  color: var(--ink);
+}
+
+.weather-pressure {
+  padding: 30px 34px 26px;
+}
+
+.weather-pressure__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.weather-pressure__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 20px;
+  color: var(--ink);
+}
+
+.weather-pressure__title small {
+  margin-left: 10px;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+}
+
+.weather-badge {
+  flex-shrink: 0;
+  padding: 6px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  letter-spacing: 0.14em;
+  color: var(--white);
+}
+
+.weather-badge--level0 { background: var(--forest); }
+.weather-badge--level1 { background: var(--brass); }
+.weather-badge--level2 { background: #c2661f; }
+.weather-badge--level3 { background: #a63a32; }
+
+.weather-panel--level2 .weather-pressure__message,
+.weather-panel--level3 .weather-pressure__message {
+  color: var(--ink);
+}
+
+.weather-chart {
+  width: 100%;
+  height: 190px;
+  display: block;
+  color: var(--forest);
+}
+
+.weather-panel--level1 .weather-chart { color: var(--brass); }
+.weather-panel--level2 .weather-chart { color: #c2661f; }
+.weather-panel--level3 .weather-chart { color: #a63a32; }
+
+.weather-chart__area {
+  fill: currentColor;
+  opacity: 0.12;
+}
+
+.weather-chart__line {
+  stroke: currentColor;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.weather-chart__grid {
+  stroke: var(--line);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.weather-chart__tick {
+  fill: var(--muted);
+  font-size: 12px;
+  font-family: inherit;
+}
+
+.weather-chart__dot {
+  fill: currentColor;
+}
+
+.weather-chart__minlabel {
+  fill: var(--ink);
+  font-size: 13px;
+}
+
+.weather-chart__scale {
+  display: flex;
+  justify-content: flex-end;
+  gap: 18px;
+  margin-top: 4px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.weather-pressure__message {
+  margin: 14px 0 0;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.weather-care {
+  margin: 12px 0 0;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.weather-care a {
+  color: var(--forest);
+}
+
+.weather-week {
+  margin-top: 34px;
+}
+
+.weather-week__title {
+  margin: 0 0 16px;
+  font-family: var(--font-display);
+  font-size: 20px;
+  color: var(--ink);
+}
+
+.weather-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.weather-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 18px 8px 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+  text-align: center;
+}
+
+.weather-day:first-child {
+  background: var(--mist);
+}
+
+.weather-day__label {
+  font-size: 14px;
+  color: var(--ink);
+  display: flex;
+  flex-direction: column;
+}
+
+.weather-day__label small {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.weather-day__icon {
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.weather-day__desc {
+  font-size: 12px;
+  color: var(--muted);
+  min-height: 2.6em;
+  display: flex;
+  align-items: center;
+}
+
+.weather-day__temp {
+  font-family: var(--font-latin);
+  font-size: 20px;
+  color: var(--ink);
+}
+
+.weather-day__temp small {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.weather-day__rain {
+  font-size: 12px;
+  color: var(--sky);
+}
+
+.weather-loading,
+.weather-error {
+  padding: 46px 20px;
+  text-align: center;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+}
+
+.weather-source {
+  margin-top: 18px;
+  font-size: 12px;
+  color: var(--muted);
+  text-align: right;
+}
+
+.weather-legend {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.weather-legend div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--muted);
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+}
+
+@media (max-width: 960px) {
+  .weather-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .weather-now {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+    padding: 26px 24px;
+  }
+
+  .weather-pressure {
+    padding: 24px 24px 22px;
+  }
+
+  .weather-days {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .weather-legend {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 680px) {
+  .weather-now__icon {
+    font-size: 44px;
+  }
+
+  .weather-now__temp {
+    font-size: 46px;
+  }
+
+  .weather-days {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .weather-day {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 12px 14px;
+    text-align: left;
+  }
+
+  .weather-day__label {
+    min-width: 3.4em;
+  }
+
+  .weather-day__desc {
+    display: none;
+  }
+
+  .weather-day__icon {
+    font-size: 24px;
+  }
+}
