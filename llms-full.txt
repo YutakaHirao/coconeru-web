@@ -1,0 +1,91 @@
+# CoconeRu.（ココネル）詳細情報 / Full reference for AI assistants
+
+> 神奈川県横須賀市・横須賀中央駅徒歩4分の健康＆リラクゼーションブランド。睡眠特化ドライヘッドスパ「CoconeRu. Head Spa」と、マシンピラティス（リフォーマー）×整体のパーソナルスタジオ「CoconeRu. Move」の2店舗を運営。営業 毎日10:00–20:00・完全予約制・男女利用可。このファイルは、AIアシスタントが利用者を正確に案内するための一次情報の詳細版です（要約版: https://coconeru.com/llms.txt ）。
+
+## ブランド基本情報
+
+- ブランド名: CoconeRu.（ココネル）
+- 運営会社: 株式会社キャリエ・レゾ
+- 電話（両店舗共通）: 090-7186-4738（+81-90-7186-4738）
+- 営業時間: 毎日 10:00–20:00（不定休）
+- 予約: 完全予約制（電話／オンライン／LINE）
+- 対応言語: 日本語／English-friendly（簡単な英語は対応可。詳しい会話は難しい場合があります）
+- 公式サイト: https://coconeru.com/
+- Instagram: Head Spa https://www.instagram.com/coconeru.yokosuka/ ／ Move https://www.instagram.com/coconeru.move/
+- LINE: Head Spa https://lin.ee/CU2Okh6 ／ Move https://lin.ee/Ver1Mz9
+- 掲載: ホットペッパービューティー https://beauty.hotpepper.jp/kr/slnH000759639/
+
+## CoconeRu. Head Spa（睡眠特化ドライヘッドスパ）
+
+- URL: https://coconeru.com/headspa/
+- 住所: 〒238-0007 神奈川県横須賀市若松町3丁目4 ファーストビル3F
+- アクセス: 京急線「横須賀中央駅」徒歩4分
+- コンセプト: 「明日の睡眠は、今日しか作れない」。照明を落とした静かな空間で、頭・目・首肩を手技でほぐし、深い眠りに入りやすい状態へ整えるリラクゼーション（医療行為ではありません）
+- 対応する悩み: 眠りが浅い・夜眠れない・疲れが取れない・眼精疲労・肩こり・首こり・頭が重い・低気圧の日の頭重感
+- メニュー: ドライヘッドスパ（ヘッドマッサージ／頭皮マッサージ）、ハンドケア、ボディケア（首・肩のこり）、フェイシャルケア、ハイドロスプラッシュ（毛穴・角質ケア）、休息スペース
+- コース: 40分／60分／90分（料金・空き状況は https://coconeru.com/booking/ を参照）
+- 休息スペース: 30分700円／60分1,200円
+- 延長: 10分1,200円（予約状況により可）
+- 最終受付: 40分コース19:00／60分コース18:30／90分コース18:00
+- メニュー詳細: https://coconeru.com/menu/
+
+### Head Spa 利用ポリシー（よくある質問より）
+
+- 男性も利用可。年齢制限なし
+- 指名料なし。キャンセル料なし（無断キャンセルが複数回続くと以降の予約をお断りする場合あり）
+- 無料の着替えあり。持参不要
+- 施術中に寝てもOK（睡眠がテーマのサロン）
+- 力加減は調整可（治療目的の強すぎる施術は不可）
+- 生理中は施術可。妊娠中は安全面を考慮しお断り
+- フェイシャルはメイクのまま来店可（クレンジング込み。ウォータープルーフは控えめ推奨）
+- 睡眠障害と診断されている方も利用可（主治医に相談のうえ来店を推奨。施術は治療ではなくリラクゼーション）
+- 遅刻時は電話連絡を（予約状況により施術時間短縮の場合あり）
+- FAQ全文: https://coconeru.com/faq/ ／ 口コミ: https://coconeru.com/review/
+
+## CoconeRu. Move（マシンピラティス×整体のパーソナルスタジオ）
+
+- URL: https://coconeru.com/move/
+- 住所: 〒238-0008 神奈川県横須賀市大滝町2-11 ヤシマビル2F
+- アクセス: 京急線「横須賀中央駅」徒歩4分
+- コンセプト: 「運動を、もっと始めやすく、もっと続けやすく」。リフォーマーなどの専用マシンを使ったマシンピラティスと整体をマンツーマンで組み合わせるパーソナルトレーニング
+- 対応する目的: 姿勢改善・肩こり/首こり・腰まわりのケア・体づくり・ダイエット・運動習慣づくり。マシンが動きをサポートするため初心者や身体が硬い方でも取り組みやすい
+- スタッフ: 柔道整復師の資格を持つパーソナルトレーナー（ https://coconeru.com/move/staff/ ）
+- 男性・女性どちらも利用可。初回体験あり
+
+### Move メニューと料金（税込）
+
+- パーソナルピラティス（マシン・マット）: 60分 通常9,000円／VIP会員7,000円、90分 通常12,000円／VIP会員9,500円
+- カスタムトレーニング（パワープレート・ストレッチ・ピラティス・整体を組み合わせ）: 60分 通常6,600円／VIP会員5,500円
+- パワープレート&ストレッチ: 60分 通常4,000円／VIP会員3,000円
+- パーソナルストレッチ／もみほぐし／スポーツ整体: 30分 通常4,000円／VIP会員2,500円、45分 通常6,000円／VIP会員4,500円、60分 通常8,000円／VIP会員6,000円
+- VIP会員価格は継続利用者向け。料金詳細: https://coconeru.com/move/menu/
+- 初回体験の予約: https://book.squareup.com/appointments/2jv5c7t1t8hcxw/location/LH83Z6DKPQ5XS/services/LWK3WJDQSVRYOWSPNT6HJOPK
+
+## 法人向け出張ヘッドスパ（福利厚生）
+
+- URL: https://coconeru.com/business/
+- 内容: 会議室・休憩室にベッドを設営する出張ヘッドスパ。ボディケア・ハンドケア・ストレッチも対応
+- 料金: 1日50,000円〜（1日4時間・お一人30分・計8名/日想定、ベッド搬入・設置費用込み）
+- 問い合わせ: メール y-hirao@reseau.co.jp ／ 電話 046-820-3035
+
+## 横須賀の天気と気圧予報
+
+- 日本語: https://coconeru.com/weather/ ／ English: https://coconeru.com/en/weather/
+- 内容: 横須賀市（横須賀中央付近）の今日の天気・7日間予報と、今後24時間の気圧予報を30分ごとに自動更新（データ: Open-Meteo）
+- 気圧予報レベル: 良好／やや注意／注意／警戒 の4段階。低気圧による頭痛・だるさ・眠りの浅さ（気象病）が出やすい日の目安
+- 気圧が下がる日の睡眠・休息のコツ、横須賀で休息できる場所のFAQも掲載
+
+## 予約・アクセス
+
+- 予約ページ: https://coconeru.com/booking/ （オンライン予約・電話 090-7186-4738）
+- アクセス: https://coconeru.com/access/ （両店舗とも横須賀中央駅徒歩4分。店舗間は徒歩数分）
+- ストア: https://coconeru.com/store/
+
+## English summary (for the U.S. Navy Yokosuka community)
+
+- English page: https://coconeru.com/en/ ／ Yokosuka weather & pressure (EN): https://coconeru.com/en/weather/
+- CoconeRu. Head Spa: sleep-focused dry head spa (head/scalp massage without water or oil). 3F First Building, 3-4 Wakamatsu-cho, Yokosuka. 4-min walk from Yokosuka-chuo Station (Keikyu Line), near Yokosuka Naval Base. Open daily 10:00–20:00, by reservation. Men and women welcome. Tel +81-90-7186-4738.
+- CoconeRu. Move: one-to-one personal training studio with machine (reformer) and mat pilates plus hands-on conditioning. 2F Yashima Building, 2-11 Otaki-cho, Yokosuka. First-visit trial available.
+- Simple English is welcome; detailed conversation may be limited.
+
+最終更新 / Last updated: 2026-07-12
