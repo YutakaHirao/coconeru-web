@@ -2775,6 +2775,15 @@ p {
   line-height: 1.7;
 }
 
+/* ===== ストア商品価格 ===== */
+.product-price {
+  margin: 2px 0 14px;
+  font-family: var(--font-latin);
+  font-size: 22px;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+}
+
 /* ===== 横須賀の天気・気圧ページ ===== */
 .weather-page .hero--weather::before {
   background-image: linear-gradient(rgba(11, 21, 18, 0.54), rgba(11, 21, 18, 0.30)), url('../img/headspa-hero.jpg');
