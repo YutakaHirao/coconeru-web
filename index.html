@@ -26,7 +26,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600&family=Noto+Serif+JP:wght@400;500;600&family=Cormorant+Garamond:wght@500;600&family=Zen+Kaku+Gothic+New:wght@500;700&display=swap">
-    <link rel="stylesheet" href="assets/css/styles.css?v=20260710-2">
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260714-2">
     <script defer src="assets/js/site.js?v=20260710-lang-1"></script>
     <script type="application/ld+json">
       {
@@ -392,6 +392,44 @@
         <div class="footer-bottom"><span>&copy; CoconeRu.</span><span><a class="footer-legal" href="privacy/index.html">個人情報の取り扱いについて</a> / Yokosuka, Kanagawa</span></div>
       </div>
     </footer>
+
+    <div class="promo-modal" id="promo-modal" role="dialog" aria-modal="true" aria-labelledby="promo-modal-title" hidden>
+      <div class="promo-modal__backdrop" data-promo-close></div>
+      <div class="promo-modal__panel">
+        <button class="promo-modal__close" type="button" aria-label="閉じる" data-promo-close>&times;</button>
+        <img src="assets/img/popup-hydro-campaign.jpg" alt="頭皮ハイドロの施術イメージ" width="1440" height="1080">
+        <div class="promo-modal__body">
+          <p class="eyebrow">Campaign</p>
+          <h2 id="promo-modal-title">頭皮ハイドロ + ヘッドスパ</h2>
+          <p class="promo-modal__lead">先行チケットキャンペーン実施中</p>
+          <p class="promo-modal__price"><span class="promo-modal__price-old">通常 ¥6,980</span><strong>¥4,980</strong></p>
+          <a class="button" href="https://square.link/u/I3PdMrdt" rel="noopener" target="_blank">チケットを購入する</a>
+        </div>
+      </div>
+    </div>
+    <script>
+      // キャンペーンポップアップ：初回表示のみ（同一セッション内では再表示しない）
+      (function () {
+        var modal = document.getElementById("promo-modal");
+        if (!modal) return;
+        var KEY = "coconeru-promo-hydro-202607";
+        try { if (sessionStorage.getItem(KEY)) return; } catch (e) {}
+        var close = function () {
+          modal.setAttribute("hidden", "");
+          document.documentElement.classList.remove("promo-modal-open");
+          try { sessionStorage.setItem(KEY, "1"); } catch (e) {}
+        };
+        var closers = modal.querySelectorAll("[data-promo-close]");
+        for (var i = 0; i < closers.length; i++) closers[i].addEventListener("click", close);
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape" && !modal.hidden) close();
+        });
+        setTimeout(function () {
+          modal.removeAttribute("hidden");
+          document.documentElement.classList.add("promo-modal-open");
+        }, 600);
+      })();
+    </script>
   </body>
 </html>
 

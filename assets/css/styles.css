@@ -3154,3 +3154,107 @@ p {
     font-size: 24px;
   }
 }
+
+/* トップページ キャンペーンポップアップ */
+.promo-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.promo-modal[hidden] {
+  display: none;
+}
+
+.promo-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(23, 34, 30, 0.6);
+}
+
+.promo-modal__panel {
+  position: relative;
+  width: min(420px, 100%);
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
+  background: var(--paper);
+  border-radius: var(--radius);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+  animation: promo-modal-in 0.35s ease;
+}
+
+@keyframes promo-modal-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.promo-modal__panel img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.promo-modal__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(23, 34, 30, 0.55);
+  color: #fff;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.promo-modal__body {
+  padding: 22px 24px 26px;
+  text-align: center;
+}
+
+.promo-modal__body h2 {
+  margin-top: 6px;
+  font-size: 20px;
+}
+
+.promo-modal__lead {
+  margin: 8px 0 0;
+  color: var(--text);
+}
+
+.promo-modal__price {
+  margin: 12px 0 18px;
+  color: var(--text);
+}
+
+.promo-modal__price-old {
+  color: var(--muted);
+  text-decoration: line-through;
+}
+
+.promo-modal__price strong {
+  margin-left: 8px;
+  color: var(--forest);
+  font-family: var(--font-display);
+  font-size: 26px;
+}
+
+html.promo-modal-open,
+html.promo-modal-open body {
+  overflow: hidden;
+}
