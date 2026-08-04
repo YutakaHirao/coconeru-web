@@ -3155,106 +3155,456 @@ p {
   }
 }
 
-/* トップページ キャンペーンポップアップ */
-.promo-modal {
-  position: fixed;
-  inset: 0;
-  z-index: 1000;
+
+/* トップページ ファーストビュー直下の予約導線（HPBクーポン3本） */
+.home-booking {
+  padding: 56px 0 64px;
+  background: var(--mist);
+  border-bottom: 1px solid rgba(38, 68, 59, 0.12);
+}
+
+.home-booking__head {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.home-booking__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 8px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 13.5px;
+  letter-spacing: 0.04em;
+}
+
+.home-booking__meta span {
+  white-space: nowrap;
+}
+
+.home-booking__meta span:not(:first-child)::before {
+  content: "・";
+  margin-right: 8px;
+  opacity: 0.5;
+}
+
+.home-booking__head h2 {
+  margin: 0;
+  font-size: clamp(23px, 2.6vw, 31px);
+  line-height: 1.5;
+}
+
+.home-booking__lead {
+  max-width: 760px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 15.5px;
+  line-height: 1.8;
+}
+
+.coupon-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.coupon-card {
+  display: flex;
+}
+
+.coupon-card__link {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  width: 100%;
+  padding: 20px 20px 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+  color: var(--text);
+  text-decoration: none;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+.coupon-card__link:hover,
+.coupon-card__link:focus-visible {
+  border-color: var(--forest);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(23, 33, 30, 0.12);
+}
+
+.coupon-card__tag {
+  justify-self: start;
+  padding: 4px 10px;
+  background: var(--forest);
+  color: var(--white);
+  font-size: 11.5px;
+  letter-spacing: 0.12em;
+}
+
+.coupon-card__name {
+  font-family: var(--font-display);
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--ink);
+}
+
+.coupon-card__meta {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 4px;
+}
+
+.coupon-card__time {
+  color: var(--muted);
+  font-size: 13.5px;
+  letter-spacing: 0.08em;
+}
+
+.coupon-card__price {
+  color: var(--forest);
+  font-family: var(--font-display);
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+.home-booking__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.home-booking__note {
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 12.5px;
+  line-height: 1.7;
+}
+
+@media (max-width: 760px) {
+  .home-booking {
+    padding: 32px 0 36px;
+  }
+
+  .home-booking__head {
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  .home-booking__head h2 {
+    font-size: 21px;
+    line-height: 1.55;
+  }
+
+  .home-booking__lead {
+    font-size: 14.5px;
+  }
+
+  .coupon-list {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .coupon-card__link {
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 6px 14px;
+    padding: 16px 16px 15px;
+  }
+
+  .coupon-card__tag {
+    grid-column: 1 / -1;
+  }
+
+  .coupon-card__name {
+    font-size: 15.5px;
+  }
+
+  .coupon-card__meta {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2px;
+    padding-top: 0;
+  }
+
+  .coupon-card__price {
+    font-size: 22px;
+  }
+
+  .home-booking__actions {
+    margin-top: 18px;
+  }
+
+  .home-booking__actions .button {
+    width: 100%;
+  }
+}
+
+/* お悩み・目的別の選び方ページ */
+.select-page .hero--select::before {
+  background-image: linear-gradient(rgba(11, 21, 18, 0.58), rgba(11, 21, 18, 0.34)),
+    url('../img/headspa-room-new.jpg');
+  background-position: center 46%;
+}
+
+.select-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 24px 0 0;
+}
+
+.select-jump a {
+  padding: 9px 18px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  transition: border-color 0.25s ease, color 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.select-jump a:hover,
+.select-jump a:focus-visible {
+  border-color: var(--forest);
+  color: var(--ink);
+}
+
+.select-hint {
+  margin: 12px 0 0;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  color: var(--terra);
+  font-size: 13.5px;
+  letter-spacing: 0.04em;
+}
+
+.select-page .card .actions {
+  margin-top: 18px;
+}
+
+/* トップページ お悩み・目的別への導線 */
+.home-select {
+  padding: 44px 0 48px;
+  background: var(--paper);
+  border-bottom: 1px solid rgba(38, 68, 59, 0.12);
+}
+
+.home-select__head {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.home-select__head h2 {
+  margin: 0;
+  font-size: clamp(21px, 2.3vw, 28px);
+  line-height: 1.5;
+}
+
+.home-select__lead {
+  max-width: 760px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 15.5px;
+  line-height: 1.8;
+}
+
+.home-select__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 0 22px;
+  padding: 0;
+  list-style: none;
+}
+
+.home-select__chips a {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 18px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--white);
+  color: var(--text);
+  text-decoration: none;
+  font-size: 14.5px;
+  letter-spacing: 0.03em;
+  transition: border-color 0.25s ease, color 0.25s ease,
+    box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.home-select__chips a:hover,
+.home-select__chips a:focus-visible {
+  border-color: var(--forest);
+  color: var(--ink);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(23, 33, 30, 0.1);
+}
+
+@media (max-width: 760px) {
+  .home-select {
+    padding: 28px 0 32px;
+  }
+
+  .home-select__head {
+    margin-bottom: 16px;
+  }
+
+  .home-select__head h2 {
+    font-size: 20px;
+  }
+
+  .home-select__lead {
+    font-size: 14.5px;
+  }
+
+  .home-select__chips {
+    gap: 8px;
+    margin-bottom: 18px;
+  }
+
+  .home-select__chips a {
+    padding: 9px 15px;
+    font-size: 13.5px;
+  }
+
+  .home-select__actions .button {
+    width: 100%;
+  }
+
+  .select-jump {
+    gap: 8px;
+  }
+
+  .select-jump a {
+    padding: 8px 15px;
+    font-size: 13.5px;
+  }
+}
+
+/* 先行チケットキャンペーン帯（9月上旬終了予定・終了後はこのブロックごと削除） */
+.promo-strip {
+  display: block;
+  background: var(--brass);
+  color: var(--white);
+  text-decoration: none;
+  transition: filter 0.25s ease;
+}
+
+.promo-strip:hover,
+.promo-strip:focus-visible {
+  filter: brightness(1.06);
+}
+
+.promo-strip__inner {
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 20px;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
-.promo-modal[hidden] {
-  display: none;
+.promo-strip__tag {
+  padding: 3px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.66);
+  font-size: 11.5px;
+  letter-spacing: 0.12em;
+  white-space: nowrap;
 }
 
-.promo-modal__backdrop {
-  position: absolute;
-  inset: 0;
-  background: rgba(23, 34, 30, 0.6);
+.promo-strip__text {
+  font-family: var(--font-display);
+  font-size: 15.5px;
+  letter-spacing: 0.02em;
 }
 
-.promo-modal__panel {
-  position: relative;
-  width: min(420px, 100%);
-  max-height: calc(100vh - 40px);
-  overflow-y: auto;
-  background: var(--paper);
-  border-radius: var(--radius);
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
-  animation: promo-modal-in 0.35s ease;
+.promo-strip__price {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-left: auto;
+  white-space: nowrap;
 }
 
-@keyframes promo-modal-in {
-  from {
-    opacity: 0;
-    transform: translateY(14px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-.promo-modal__panel img {
-  display: block;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-}
-
-.promo-modal__close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 36px;
-  height: 36px;
-  padding: 0;
-  border: 0;
-  border-radius: 50%;
-  background: rgba(23, 34, 30, 0.55);
-  color: #fff;
-  font-size: 22px;
-  line-height: 1;
-  cursor: pointer;
-}
-
-.promo-modal__body {
-  padding: 22px 24px 26px;
-  text-align: center;
-}
-
-.promo-modal__body h2 {
-  margin-top: 6px;
-  font-size: 20px;
-}
-
-.promo-modal__lead {
-  margin: 8px 0 0;
-  color: var(--text);
-}
-
-.promo-modal__price {
-  margin: 12px 0 18px;
-  color: var(--text);
-}
-
-.promo-modal__price-old {
-  color: var(--muted);
+.promo-strip__price-old {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 13px;
   text-decoration: line-through;
 }
 
-.promo-modal__price strong {
-  margin-left: 8px;
-  color: var(--forest);
+.promo-strip__price strong {
   font-family: var(--font-display);
-  font-size: 26px;
+  font-size: 21px;
+  line-height: 1;
 }
 
-html.promo-modal-open,
-html.promo-modal-open body {
-  overflow: hidden;
+.promo-strip__note {
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.82);
+  white-space: nowrap;
+}
+
+.promo-strip__note::after {
+  content: " a";
+  margin-left: 6px;
+}
+
+@media (max-width: 760px) {
+  /* モバイルは2行固定（1行目=何が／2行目=いくら）。
+     ファーストビューにクーポンカードを残すため高さを詰める。 */
+  .promo-strip__inner {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas:
+      "tag   text  text"
+      "price price note";
+    align-items: center;
+    gap: 3px 8px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+  }
+
+  .promo-strip__tag {
+    grid-area: tag;
+    padding: 2px 8px;
+    font-size: 10.5px;
+  }
+
+  .promo-strip__text {
+    grid-area: text;
+    font-size: 13px;
+  }
+
+  .promo-strip__price {
+    grid-area: price;
+    margin-left: 0;
+    gap: 6px;
+  }
+
+  .promo-strip__price-old {
+    font-size: 12px;
+  }
+
+  .promo-strip__price strong {
+    font-size: 18px;
+  }
+
+  .promo-strip__note {
+    grid-area: note;
+    justify-self: end;
+    font-size: 11.5px;
+  }
 }
