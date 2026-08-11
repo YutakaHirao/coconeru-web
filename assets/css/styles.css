@@ -3348,6 +3348,13 @@ p {
   }
 }
 
+/* 睡眠ハブページ */
+.sleep-page .hero--sleep::before {
+  background-image: linear-gradient(rgba(11, 21, 18, 0.6), rgba(11, 21, 18, 0.34)),
+    url('../img/headspa-hero.jpg');
+  background-position: center 40%;
+}
+
 /* お悩み・目的別の選び方ページ */
 .select-page .hero--select::before {
   background-image: linear-gradient(rgba(11, 21, 18, 0.58), rgba(11, 21, 18, 0.34)),

@@ -34,6 +34,7 @@ CoconeRu.は横須賀中央エリアで2つの店舗を運営しています。�
 
 ## よくある質問 / FAQ
 
+- [横須賀で眠りを整える](https://coconeru.com/sleep/): 眠りが浅い・寝つけない・疲れが取れない方向けの睡眠ハブページ。頭・目・首肩の緊張をほどき深い眠りに入りやすい状態へ整えるドライヘッドスパの流れ（ほぐす→まどろむ→休息スペースでそのまま眠る）、おすすめコース（ドライヘッド60分＋休息20分 ¥8,800）、気圧と眠りの関係を掲載。施術は治療ではなくリラクゼーション。長引く場合は医療機関の受診を推奨。
 - [Head Spa FAQ](https://coconeru.com/faq/): マッサージとの違い・夜眠れない/疲れが取れない場合の考え方・睡眠障害の方のご利用・肩こり・眼精疲労・予約方法などの自己完結型Q&A。[男性のお客様へ](https://coconeru.com/faq/#for-men)のセクションで、男性（メンズ）のご利用・男性スタッフ対応・圧の調整についても案内。
 - [Move（パーソナルトレーニング）](https://coconeru.com/move/): パーソナルトレーニングとピラティスの違い・ダイエット目的の利用・初回体験の流れをページ内FAQに掲載。
 
@@ -56,4 +57,4 @@ CoconeRu.は横須賀中央エリアで2つの店舗を運営しています。�
 - Head Spa (dry head spa / head massage): 3F First Building, 3-4 Wakamatsu-cho, Yokosuka. 4-min walk from Yokosuka-chuo Station. Open daily 10:00–20:00. English-friendly. Reservation required. Tel +81-90-7186-4738.
 - Move (personal training / pilates / seitai): 2F Yashima Building, 2-11 Otaki-cho, Yokosuka. Personal training, body-conditioning, posture and stiff-shoulder care.
 
-最終更新 / Last updated: 2026-08-03
+最終更新 / Last updated: 2026-08-11
