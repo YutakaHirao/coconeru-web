@@ -2041,6 +2041,29 @@ p {
     background-position: center 34%;
   }
 }
+/* 法人ページ: 見出しの「コンディショニング」は word-break: auto-phrase では
+   1文節扱いで折り返せず、狭い画面でヒーローからはみ出す。必要なときだけ割る。 */
+.business-page .hero h1 {
+  overflow-wrap: anywhere;
+}
+
+/* 法人ページ: 料金表を複数積むため、1枚組み前提の既存レイアウトより縦の間隔が要る。 */
+.business-page .price-block + .price-block {
+  margin-top: 56px;
+}
+
+.business-page .price-block > h3 {
+  margin-bottom: 12px;
+}
+
+.business-page .price-block > p {
+  margin-bottom: 22px;
+}
+
+.business-page .price-block > .price-table + p {
+  margin: 22px 0 0;
+}
+
 .business-intro {
   max-width: 820px;
 }
