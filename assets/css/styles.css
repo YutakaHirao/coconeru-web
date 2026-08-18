@@ -3565,7 +3565,7 @@ p {
 }
 
 .promo-strip__note::after {
-  content: " a";
+  content: " →";
   margin-left: 6px;
 }
 
