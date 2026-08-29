@@ -620,7 +620,8 @@ h3 {
   line-height: 1.22;
 }
 
-h2 {
+h2,
+.section__head h1 {
   font-size: 33px;
 }
 
@@ -1837,7 +1838,8 @@ p {
     padding: 48px 0 30px;
   }
 
-  h2 {
+  h2,
+  .section__head h1 {
     font-size: 28px;
   }
 
@@ -2757,7 +2759,8 @@ p {
 }
 
 @media (max-width: 680px) {
-  h2 {
+  h2,
+  .section__head h1 {
     font-size: 23px;
   }
 
