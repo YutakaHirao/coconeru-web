@@ -1472,6 +1472,26 @@ p {
   font-size: clamp(24px, 7vw, 32px);
 }
 
+/* Square予約ウィジェット。挿入されるiframeは height:100% で自動リサイズしないため、
+   コンテナ側で高さを持たせる。幅280px未満だとSquareがボタンにフォールバックする。 */
+.square-embed {
+  height: 760px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+}
+
+.square-embed iframe {
+  display: block;
+}
+
+@media (max-width: 680px) {
+  .square-embed {
+    height: 680px;
+  }
+}
+
 .booking-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
