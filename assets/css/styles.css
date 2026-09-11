@@ -3758,7 +3758,8 @@ p {
   .pass-bubble__text { max-width: 250px; }
   .pass-bubble__rabbit { left: auto; right: -8px; top: auto; bottom: -70px; height: 110px; }
   .pass-grid-5, .plans-grid, .steps-4, .scene-grid, .checks, .pay-grid { grid-template-columns: 1fr; }
-  .why-flow { grid-template-columns: 1fr; padding: 0; }
+  .why-card > img { height: auto; aspect-ratio: auto; }
+  .why-flow { grid-template-columns: minmax(0, 1fr); padding: 0; }
   .why-flow > div:nth-child(2) { border: 0; padding: 0; }
   .pass-notice { flex-direction: column; align-items: flex-start; }
   .plan__price { font-size: 32px; }
