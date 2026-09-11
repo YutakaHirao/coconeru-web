@@ -3687,6 +3687,8 @@ p {
 .pass-grid-5 .card h3 { font-size: 17px; margin: 0 0 6px; }
 .pass-grid-5 .card .muted { font-size: 13.5px; }
 .pass-time { display: block; margin-bottom: 4px; color: #b7a374; font-size: 12px; letter-spacing: 0.14em; }
+html[lang="en"] .theme-move .hero .button--outline { color: #fff; border-color: #fff; background: rgba(0, 0, 0, 0.3); }
+html[lang="en"] .theme-move .hero .button--outline:hover { color: #111; background: #fff; }
 .why-card { border: 1px solid rgba(241, 237, 224, 0.14); border-radius: var(--radius); background: #17211b; overflow: hidden; margin-bottom: 18px; }
 .why-card > img { display: block; width: 100%; aspect-ratio: 1000 / 300; object-fit: cover; background: #f7f6f0; }
 .why-card__body { padding: 18px 22px 22px; }
