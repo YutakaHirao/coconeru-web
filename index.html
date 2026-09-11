@@ -453,6 +453,17 @@
       </div>
     </footer>
 
+  <script>
+      (function () {
+        var el = document.getElementById("pass-left"); if (!el) return;
+        fetch("/api/pass-left", { cache: "no-store" }).then(function (r) { return r.json(); }).then(function (d) {
+          if (d && typeof d.left === "number") {
+            el.textContent = d.left;
+            if (d.left <= 0) { var n = el.closest(".pass-notice__left"); if (n) n.textContent = "今の価格での受付は終了しました"; }
+          }
+        }).catch(function () {});
+      })();
+    </script>
   </body>
 </html>
 
