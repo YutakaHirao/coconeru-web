@@ -1,0 +1,220 @@
+.links-page {
+  background: #0f1713;
+  color: #f2f5f3;
+  font-family: "Zen Kaku Gothic New", "Hiragino Sans", "Yu Gothic", Meiryo, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+
+.links-hub {
+  width: min(100% - 32px, 520px);
+  margin: 0 auto;
+  padding: 28px 0 max(24px, env(safe-area-inset-bottom));
+}
+
+.links-hub__header {
+  display: grid;
+  grid-template-columns: 54px minmax(0, 1fr);
+  align-items: center;
+  gap: 8px 16px;
+  padding-bottom: 24px;
+}
+
+.links-hub__logo {
+  width: 54px;
+  height: 54px;
+  padding: 8px;
+  background: #fff;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.links-hub h1 {
+  margin: 0;
+  color: #f2f5f3;
+  font: 700 26px/1.25 "Zen Kaku Gothic New", sans-serif;
+  letter-spacing: 0;
+}
+
+.links-hub__store {
+  margin: 3px 0 0;
+  color: #d0d9d3;
+  font-size: 14px;
+}
+
+.links-hub__intro {
+  grid-column: 1 / -1;
+  margin: 8px 0 0;
+  color: #b9c6be;
+  font-size: 13px;
+}
+
+.links-hub__section + .links-hub__section {
+  margin-top: 26px;
+}
+
+.links-hub h2 {
+  margin: 0 0 10px;
+  color: #c1cec6;
+  font: 700 14px/1.5 "Zen Kaku Gothic New", sans-serif;
+  letter-spacing: 0;
+}
+
+.links-hub__bookings {
+  display: grid;
+  gap: 10px;
+}
+
+.links-hub__booking {
+  position: relative;
+  display: grid;
+  gap: 2px;
+  min-height: 100px;
+  padding: 14px 42px 14px 18px;
+  border: 1px solid #4a5e51;
+  border-radius: 6px;
+  background: #1a251e;
+  color: #f2f5f3;
+  text-decoration: none;
+}
+
+.links-hub__booking--trial {
+  border-color: #5a9d78;
+  background: #285a40;
+}
+
+.links-hub__audience {
+  color: #c6d6cc;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.links-hub__label {
+  display: block;
+  color: #f2f5f3;
+  font-size: 17px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.links-hub__detail {
+  display: block;
+  margin-top: 2px;
+  color: #b9c6be;
+  font-size: 12px;
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+
+.links-hub__booking--trial .links-hub__detail,
+.links-hub__booking--trial .links-hub__audience {
+  color: #e0eee5;
+}
+
+.links-hub__arrow {
+  flex-shrink: 0;
+  width: 24px;
+  color: #c4d8ca;
+  font-family: Arial, sans-serif;
+  font-size: 22px;
+  line-height: 1;
+  text-align: center;
+}
+
+.links-hub__booking > .links-hub__arrow {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.links-hub__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 76px;
+  padding: 14px 2px;
+  border-bottom: 1px solid #33433a;
+  text-decoration: none;
+}
+
+.links-hub__row > span:first-child {
+  min-width: 0;
+}
+
+.links-hub__row .links-hub__label {
+  font-size: 15px;
+}
+
+.links-hub__row .links-hub__social {
+  flex: 0 0 32px;
+  width: 32px;
+  height: 32px;
+  border: 0;
+  background: transparent;
+}
+
+.links-hub__booking:hover {
+  border-color: #b2c9bb;
+  background: #243b2e;
+}
+
+.links-hub__booking--trial:hover {
+  background: #326c4e;
+}
+
+.links-hub__row:hover .links-hub__label,
+.links-hub__footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.links-hub a:focus-visible {
+  outline: 2px solid #e3cc91;
+  outline-offset: 4px;
+}
+
+.links-hub__footer {
+  padding-top: 26px;
+  color: #b9c6be;
+  font-size: 12px;
+}
+
+.links-hub__footer p {
+  margin: 0;
+}
+
+.links-hub__phone {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: #e3ebe6;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.links-hub__footer-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 6px;
+}
+
+.links-hub__footer-actions > a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+.links-hub__footer-actions .social-link {
+  width: 44px;
+  height: 44px;
+}
+
+@media (min-width: 681px) {
+  .links-hub {
+    padding-top: 44px;
+  }
+}
