@@ -19,6 +19,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600&family=Noto+Serif+JP:wght@400;500;600&family=Cormorant+Garamond:wght@500;600&family=Zen+Kaku+Gothic+New:wght@500;700&display=swap">
     <link rel="stylesheet" href="../assets/css/styles.css?v=20260911-seo-1">
+    <link rel="stylesheet" href="../assets/css/pass.css?v=20260912-1">
     <script defer src="../assets/js/site.js?v=20260710-lang-1"></script>
     <script type="application/ld+json">
       {
@@ -64,7 +65,7 @@
     </script>
     <meta name="theme-color" content="#0f1713">
   </head>
-  <body class="theme-headspa has-sticky-bar">
+  <body class="theme-headspa pass-page">
     <a class="skip-link" href="#main">本文へ移動</a>
     <header class="site-header">
       <div class="header-inner">
@@ -81,19 +82,22 @@
     <main id="main">
       <section class="hero hero--center pass-hero" style="--hero-image: url('/assets/img/pass/menu-head.jpg')">
         <div class="hero__content">
-          <p class="eyebrow">CoconeRu. Pass｜会員プラン</p>
-          <h1>CoconeRu. Pass 会員プラン</h1>
-          <p class="lead">はじめての方は<strong>Start Pass（2か月で3回 ¥14,800）</strong>から。施術60分＋休息20分、1回はMoveのピラティスにも使えます。続ける方は月額プランへ。更新の停止はいつでも可能で、入会時の価格は据え置きです。</p>
+          <p class="eyebrow">横須賀中央本店の会員プラン</p>
+          <h1>CoconeRu. Pass</h1>
+          <p class="lead">施術60分と、休息20分。<br>頭・体・顔のケアを、通いやすいペースで。</p>
+          <p class="pass-hero__price">Start Pass <strong>2か月3回 ¥14,800</strong></p>
           <div class="hero-actions">
-            <a class="button button--light" href="#join">Start Passで始める ¥14,800</a>
+            <a class="button button--light" href="#join">入会手続きへ</a>
             <a class="button button--terra" href="../booking/index.html">体験を予約する（¥6,600）</a>
           </div>
+          <p class="pass-hero__note">解約まで2か月ごとに自動更新・カード決済のみ</p>
         </div>
       </section>
 
       <section class="section" id="plans">
         <div class="container">
           <p class="breadcrumb"><a href="../index.html">トップ</a> / 会員プラン</p>
+          <nav class="pass-toc" aria-label="会員プランのページ内案内"><a href="#plans">料金</a><a href="#one-visit">施術内容</a><a href="#terms">利用条件</a><a href="#join">入会する</a><a href="#faq">よくある質問</a></nav>
           <div class="section__head">
             <div>
               <p class="eyebrow">Plans</p>
@@ -101,14 +105,43 @@
             </div>
           </div>
           <div class="pass-notice"><div class="pass-notice__n">先着30名<small>全プラン合計</small></div><div>月額プランは<b>2027年1月1日から価格を改定</b>します。今の価格でご入会いただけるのは、<b>全プラン合わせて先着30名・12月末まで</b>。ご入会後はその価格のまま据え置きです。</div></div>
-          <table class="price-table pass-table">
-            <tr><th>プラン</th><th>更新</th><th>回数</th><th class="num">今だけ価格（12月末まで）</th><th class="num">2027年1月〜</th><th class="num">1回あたり</th><th>こんな方に</th></tr>
-            <tr class="hl"><td>Start Pass</td><td>2か月ごと</td><td>3回（1回までピラティス可）</td><td class="num">¥14,800</td><td class="num">¥14,800</td><td class="num">¥4,933</td><td>はじめての方。月あたり¥7,400</td></tr>
-            <tr><td>Pass 2</td><td>毎月</td><td>2回</td><td class="num">¥9,800</td><td class="num">¥11,000</td><td class="num">¥4,900</td><td>隔週で通う方</td></tr>
-            <tr><td>Pass 3</td><td>毎月</td><td>3回</td><td class="num">¥14,400</td><td class="num">¥16,200</td><td class="num">¥4,800</td><td>顔と頭を両方の方</td></tr>
-            <tr><td>Pass 4</td><td>毎月</td><td>4回</td><td class="num">¥18,800</td><td class="num">¥21,200</td><td class="num">¥4,700</td><td>週1回。首肩がつらい方</td></tr>
-          </table>
-          <p class="muted" style="margin-top:10px">料金はすべて税込です。各プランは自動更新となります。お支払い済みの期間については、キャンセル・返金を承っておりません。プランの変更は次回の更新から承ります。ご利用回数を増やすことも、減らすこともできます。今だけ価格は全プラン合わせて先着30名。ご入会の方は2027年1月以降もその価格のままです。</p>
+          <p class="pass-caption">すべて税込・ご入会時の価格を継続して適用します。</p>
+          <div class="pass-pricing">
+            <article class="pass-option pass-option--start">
+              <p class="pass-option__audience">初めての方に</p><h3>Start Pass</h3>
+              <p class="pass-option__price">¥14,800 <span>／2か月・3回</span></p>
+              <p>1回あたり約¥4,933・月あたり¥7,400</p>
+              <p>3回のうち1回は、Moveのピラティスにも使えます。</p>
+              <p class="pass-option__renewal">2か月ごとに自動更新</p>
+              <p class="pass-option__future">2027年1月以降も ¥14,800／2か月</p>
+              <a href="#join" class="pass-option__link">Start Passの入会手続きへ</a>
+            </article>
+            <article class="pass-option">
+              <p class="pass-option__audience">隔週で通いたい方に</p><h3>Pass 2</h3>
+              <p class="pass-option__price">¥9,800 <span>／月・2回</span></p>
+              <p>1回あたり¥4,900</p>
+              <p class="pass-option__renewal">毎月自動更新</p>
+              <p class="pass-option__future">2027年1月以降の新規入会：¥11,000／月</p>
+              <a href="#join" class="pass-option__link">Pass 2の入会手続きへ</a>
+            </article>
+            <article class="pass-option">
+              <p class="pass-option__audience">顔と頭、どちらもケアしたい方に</p><h3>Pass 3</h3>
+              <p class="pass-option__price">¥14,400 <span>／月・3回</span></p>
+              <p>1回あたり¥4,800</p>
+              <p class="pass-option__renewal">毎月自動更新</p>
+              <p class="pass-option__future">2027年1月以降の新規入会：¥16,200／月</p>
+              <a href="#join" class="pass-option__link">Pass 3の入会手続きへ</a>
+            </article>
+            <article class="pass-option">
+              <p class="pass-option__audience">週1回、首肩をケアしたい方に</p><h3>Pass 4</h3>
+              <p class="pass-option__price">¥18,800 <span>／月・4回</span></p>
+              <p>1回あたり¥4,700</p>
+              <p class="pass-option__renewal">毎月自動更新</p>
+              <p class="pass-option__future">2027年1月以降の新規入会：¥21,200／月</p>
+              <a href="#join" class="pass-option__link">Pass 4の入会手続きへ</a>
+            </article>
+          </div>
+          <ul class="pass-notes"><li>今だけ価格は全プラン合わせて先着30名・2026年12月末まで。ご入会後もその価格のままです。</li><li>各プランは自動更新です。プランの変更は次回更新から承ります。</li><li>お支払い済みの期間については、キャンセル・返金を承っておりません。</li></ul>
         </div>
       </section>
 
@@ -121,17 +154,19 @@
               <p class="lead">施術60分＋休息20分（カウンセリング含め約90分）。60分をひとつ、または30分＋30分で。</p>
             </div>
           </div>
-          <table class="price-table pass-table">
-            <tr><th>メニュー</th><th>内容</th><th>時間</th><th>会員での扱い</th></tr>
-            <tr><td>ドライヘッドスパ</td><td>髪を濡らさず、頭皮から首すじ・肩までを手技でほぐす。目の疲れ、眠りの浅さに。</td><td>30分／60分</td><td rowspan="4">追加なし。組み合わせ自由</td></tr>
-            <tr><td>ボディケア</td><td>首肩・背中を中心としたもみほぐし。</td><td>30分／60分</td></tr>
-            <tr><td>足つぼ／ハンドケア</td><td>足裏〜足首、手のひら〜前腕の手技。</td><td>30分</td></tr>
-            <tr><td>フェイシャル（手技）</td><td>クレンジングのあと、手技で顔・首すじをほぐす。メイクのまま来店可。頭30分との組み合わせで。</td><td>30分</td></tr>
-            <tr><td>水素水洗浄（顔・頭皮）</td><td>水素水を吹きつけながら同時に吸い取り、洗浄剤を使わず毛穴の汚れを洗い流す。頭皮は髪がほとんど濡れない。</td><td>30分</td><td>追加なし（ビジター¥8,500と同内容）</td></tr>
-            <tr><td>90分コース</td><td>体45分＋頭45分、または顔45分＋頭45分。</td><td>90分＋休息20分</td><td>差額 +¥3,500</td></tr>
-            <tr><td>休息</td><td>照明を落とした休息スペースでお茶とともに。</td><td>20分</td><td>全コース標準</td></tr>
-            <tr><td>パーソナルピラティス（Move）</td><td>リフォーマーを使ったマシンピラティスをマンツーマンで。姿勢撮影とAI解析付き。</td><td>60分</td><td>Start Passの3回のうち1回に置換可</td></tr>
-          </table>
+          <p class="pass-caption">以下のケアは追加料金なし。施術60分の中で組み合わせられます。</p>
+          <dl class="pass-services">
+            <div><dt>ドライヘッドスパ <span>30分／60分</span></dt><dd>髪を濡らさず、頭皮から首すじ・肩までを手技でほぐす。目の疲れ、眠りの浅さに。</dd></div>
+            <div><dt>ボディケア <span>30分／60分</span></dt><dd>首肩・背中を中心としたもみほぐし。</dd></div>
+            <div><dt>足つぼ／ハンドケア <span>30分</span></dt><dd>足裏〜足首、手のひら〜前腕の手技。</dd></div>
+            <div><dt>フェイシャル（手技） <span>30分</span></dt><dd>クレンジングのあと、手技で顔・首すじをほぐす。メイクのまま来店可。頭30分との組み合わせで。</dd></div>
+            <div><dt>水素水洗浄（顔・頭皮） <span>30分</span></dt><dd>水素水を吹きつけながら同時に吸い取り、洗浄剤を使わず毛穴の汚れを洗い流す。頭皮は髪がほとんど濡れない。ビジター¥8,500と同内容です。</dd></div>
+          </dl>
+          <dl class="pass-services pass-services--extras">
+            <div><dt>施術後の休息 <span>20分・全コースに含まれます</span></dt><dd>照明を落とした休息スペースでお茶とともに。</dd></div>
+            <div><dt>90分コースへの変更 <span>その都度 +¥3,500</span></dt><dd>体45分＋頭45分、または顔45分＋頭45分。施術90分＋休息20分です。</dd></div>
+            <div><dt>パーソナルピラティス（Move） <span>60分・Start Passのみ</span></dt><dd>3回のうち1回をピラティスに変更できます。リフォーマーを使ったマンツーマンのレッスン。姿勢撮影とAI解析付きです。</dd></div>
+          </dl>
         </div>
       </section>
 
@@ -140,7 +175,7 @@
           <div class="section__head">
             <div>
               <p class="eyebrow">Terms</p>
-              <h2>会員の条件</h2>
+              <h2>ご利用条件と会員特典</h2>
             </div>
           </div>
           <div class="checks">
@@ -165,13 +200,12 @@
               <h2>ビジター料金との比較（2か月分）</h2>
             </div>
           </div>
-          <table class="price-table pass-table">
-            <tr><th>使い方</th><th class="num">ビジターで受けた場合</th><th class="num">会員</th><th class="num">差</th></tr>
-            <tr><td>60分×3回</td><td class="num">¥22,500</td><td class="num">¥14,800（Start Pass）</td><td class="num">−¥7,700</td></tr>
-            <tr><td>60分×2回＋ピラティス1回</td><td class="num">¥24,000</td><td class="num">¥14,800（Start Pass）</td><td class="num">−¥9,200</td></tr>
-            <tr><td>60分×4回</td><td class="num">¥30,000</td><td class="num">¥19,600（Pass 2×2か月）</td><td class="num">−¥10,400</td></tr>
-            <tr><td>60分×6回</td><td class="num">¥45,000</td><td class="num">¥28,800（Pass 3×2か月）</td><td class="num">−¥16,200</td></tr>
-          </table>
+          <div class="pass-comparisons">
+            <article><h3>60分×3回</h3><dl><div><dt>ビジター</dt><dd>¥22,500</dd></div><div><dt>Start Pass</dt><dd>¥14,800</dd></div><div><dt>2か月の差額</dt><dd>−¥7,700</dd></div></dl></article>
+            <article><h3>60分×2回＋ピラティス1回</h3><dl><div><dt>ビジター</dt><dd>¥24,000</dd></div><div><dt>Start Pass</dt><dd>¥14,800</dd></div><div><dt>2か月の差額</dt><dd>−¥9,200</dd></div></dl></article>
+            <article><h3>60分×4回</h3><dl><div><dt>ビジター</dt><dd>¥30,000</dd></div><div><dt>Pass 2・2か月分</dt><dd>¥19,600</dd></div><div><dt>2か月の差額</dt><dd>−¥10,400</dd></div></dl></article>
+            <article><h3>60分×6回</h3><dl><div><dt>ビジター</dt><dd>¥45,000</dd></div><div><dt>Pass 3・2か月分</dt><dd>¥28,800</dd></div><div><dt>2か月の差額</dt><dd>−¥16,200</dd></div></dl></article>
+          </div>
           <p class="muted" style="margin-top:10px">ビジター料金：体験¥6,600（初回のみ）／60分＋休息20分 ¥7,500／水素水機器コース ¥8,500／90分 ¥11,000／Moveピラティス60分 ¥9,000。</p>
         </div>
       </section>
@@ -185,14 +219,16 @@
               <p class="lead">オンライン決済（Square）か、店頭でのお申し込みも可能です。初回来店時にご入会いただくこともできます。</p>
             </div>
           </div>
-          <p class="plan__terms" style="font-size:13px;color:var(--ink)">お申し込み前にご確認ください：お支払い済みの期間については、キャンセル・返金を承っておりません。次回更新日の前日までにお知らせいただければ、次の決済から更新を停止します。ご利用にならなかった回数は次のご利用期間に1回まで繰り越せます。</p>
+          <p class="pass-payment-note"><strong>お支払いはカードのみ</strong>オンライン（Square）・店頭ともに、サブスク入会のお支払いはカード決済となります。</p>
+          <ul class="pass-notes"><li>各プランは解約のお申し出まで自動更新されます。</li><li>次回更新日の前日までのお申し出で、次の決済から更新を停止します。</li><li>お支払い済みの期間のキャンセル・返金は承っておりません。</li><li>未利用分は、次のご利用期間に1回まで繰り越せます。</li></ul>
           <div class="pay-grid">
-            <a class="button" href="/go/start" rel="noopener" target="_blank">Start Pass<span>¥14,800 / 2か月</span></a>
-            <a class="button button--outline" href="/go/pass2" rel="noopener" target="_blank">Pass 2<span>¥9,800 / 月</span></a>
-            <a class="button button--outline" href="/go/pass3" rel="noopener" target="_blank">Pass 3<span>¥14,400 / 月</span></a>
-            <a class="button button--outline" href="/go/pass4" rel="noopener" target="_blank">Pass 4<span>¥18,800 / 月</span></a>
+            <a class="button" href="/go/start" rel="noopener" target="_blank">Start Passに加入する<span>¥14,800／2か月・3回</span></a>
+            <a class="button button--outline" href="/go/pass2" rel="noopener" target="_blank">Pass 2に加入する<span>¥9,800／月・2回</span></a>
+            <a class="button button--outline" href="/go/pass3" rel="noopener" target="_blank">Pass 3に加入する<span>¥14,400／月・3回</span></a>
+            <a class="button button--outline" href="/go/pass4" rel="noopener" target="_blank">Pass 4に加入する<span>¥18,800／月・4回</span></a>
           </div>
-          <p class="muted" style="margin-top:14px">店頭でも同じ価格でご入会いただけます。サブスク（会員プラン）へのご入会は、オンライン・店頭ともにカード決済のみとなります。ご入会後は、<a href="../booking/index.html#book-headspa">Web予約ページ</a>の「CoconeRu. Pass 会員」から、または会計時に次のご予約をお取りください。</p>
+          <p class="pass-caption">店頭でも同じ価格でご入会いただけます。</p>
+          <p class="pass-after-join"><strong>ご入会後の予約</strong><a href="../booking/index.html#book-headspa">Web予約ページ</a>の「CoconeRu. Pass 会員」から、または会計時に次のご予約をお取りください。</p>
         </div>
       </section>
 
@@ -204,15 +240,15 @@
               <div class="h2row"><img class="rab rab--inline" src="../assets/img/pass/rabbit-thinking.png" alt="" loading="lazy"><h2>よくある質問</h2></div>
             </div>
           </div>
-          <dl class="pass-faq">
-            <dt>まだ会員になるか決めていません。</dt><dd>まずは体験（¥6,600）で、施術やお店の雰囲気をお確かめください。通うペースについてもご相談いただけます。ご入会は体験後にゆっくりご検討ください。当日でなくても、次回以降にご入会いただけます（その場合は通常のビジター料金です）。</dd>
-            <dt>Start Passはいつまで利用できますか？</dt><dd>Start Passは、解約のお申し出がない限り、2か月ごとに自動更新され、更新のたびにご利用料金が決済されます。継続のお手続きは不要で、引き続きご利用いただけます。解約をご希望の場合は、次回更新日の前日までに、店頭またはLINEでお知らせください。</dd>
-            <dt>解約の手続きは。</dt><dd>次回更新日の前日までに、店頭かLINEでお申し出ください。次の決済から更新を停止します。違約金はありません。</dd>
-            <dt>登録後にキャンセルできますか。</dt><dd>お支払い済みの期間については、キャンセル・返金を承っておりません。使い切れなかった分は次のご利用期間に1回まで繰り越せます。</dd>
-            <dt>予約の変更・キャンセルは。</dt><dd>前日までは無料で変更できます。当日のキャンセルは、1回ご利用いただいた扱いとなります。</dd>
-            <dt>顔（フェイシャル）だけを60分受けられますか。</dt><dd>現在は顔30分＋頭30分の組み合わせでご案内しています。</dd>
-            <dt>男性も会員になれますか。</dt><dd>はい、ご入会いただけます。全メニュー、性別を問わずご利用いただけます。</dd>
-          </dl>
+          <div class="pass-questions">
+            <details><summary>まだ会員になるか決めていません。</summary><div><p>まずは体験（¥6,600）で、施術やお店の雰囲気をお確かめください。通うペースについてもご相談いただけます。ご入会は体験後にゆっくりご検討ください。当日でなくても、次回以降にご入会いただけます（その場合は通常のビジター料金です）。</p></div></details>
+            <details><summary>Start Passはいつまで利用できますか？</summary><div><p>Start Passは、解約のお申し出がない限り、2か月ごとに自動更新され、更新のたびにご利用料金が決済されます。継続のお手続きは不要で、引き続きご利用いただけます。解約をご希望の場合は、次回更新日の前日までに、店頭またはLINEでお知らせください。</p></div></details>
+            <details><summary>解約の手続きは。</summary><div><p>次回更新日の前日までに、店頭かLINEでお申し出ください。次の決済から更新を停止します。違約金はありません。</p></div></details>
+            <details><summary>登録後にキャンセルできますか。</summary><div><p>お支払い済みの期間については、キャンセル・返金を承っておりません。使い切れなかった分は次のご利用期間に1回まで繰り越せます。</p></div></details>
+            <details><summary>予約の変更・キャンセルは。</summary><div><p>前日までは無料で変更できます。当日のキャンセルは、1回ご利用いただいた扱いとなります。</p></div></details>
+            <details><summary>顔（フェイシャル）だけを60分受けられますか。</summary><div><p>現在は顔30分＋頭30分の組み合わせでご案内しています。</p></div></details>
+            <details><summary>男性も会員になれますか。</summary><div><p>はい、ご入会いただけます。全メニュー、性別を問わずご利用いただけます。</p></div></details>
+          </div>
         </div>
       </section>
 
@@ -252,11 +288,6 @@
         </div>
       </section>
     </main>
-
-    <div class="sticky-bar" aria-label="入会・体験の予約">
-      <a class="button" href="/go/start" rel="noopener" target="_blank">Start Pass ¥14,800</a>
-      <a class="button button--outline" href="../booking/index.html">体験 ¥6,600</a>
-    </div>
 
     <footer class="site-footer">
       <div class="container">

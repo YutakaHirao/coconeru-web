@@ -1,0 +1,150 @@
+.pass-page {
+  --muted: #b7c5bd;
+  --text: #e0e7e2;
+  --ink: #f3f5f0;
+}
+
+.pass-page .brand-logo { filter: brightness(0) invert(1); }
+
+.pass-page main {
+  font-family: "Zen Kaku Gothic New", "Hiragino Sans", "Yu Gothic", Meiryo, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0;
+}
+
+.pass-page main :is(h1, h2, h3, p, a, span, dt, dd, summary) {
+  letter-spacing: 0;
+}
+
+.pass-page main .container,
+.pass-page .pass-hero .hero__content {
+  width: min(1000px, calc(100% - 40px));
+}
+
+.pass-page main .section { padding: 56px 0; }
+.pass-page main section[id] { scroll-margin-top: 104px; }
+.pass-page main .section__head { display: block; margin-bottom: 24px; }
+.pass-page main h2 { font-size: 28px; line-height: 1.5; }
+.pass-page main .lead { max-width: 760px; font-size: 16px; margin-top: 12px; color: var(--text); }
+.pass-page main .eyebrow { margin-bottom: 8px; font-size: 13px; }
+.pass-page main .muted { font-size: 14px; }
+.pass-page main .reveal { opacity: 1; transform: none; transition: none; }
+
+.pass-page .pass-hero { min-height: 360px; max-height: none; }
+.pass-page .pass-hero::before {
+  background-image: linear-gradient(90deg, rgba(9, 20, 14, .82), rgba(9, 20, 14, .5)), var(--hero-image);
+}
+.pass-page .pass-hero .hero__content { padding: 44px 0; }
+.pass-page .pass-hero h1 { font-size: 42px; line-height: 1.25; }
+.pass-page .pass-hero .eyebrow { color: #e2eadd; }
+.pass-page .pass-hero .lead { color: #fff; }
+.pass-page .pass-hero__price { margin-top: 14px; color: #fff; font-size: 16px; }
+.pass-page .pass-hero__price strong { display: inline-block; margin-left: 8px; font-size: 20px; }
+.pass-page .pass-hero .hero-actions { margin-top: 20px; gap: 10px; }
+.pass-page .pass-hero__note { margin-top: 12px; color: #e2eadd; font-size: 13px; }
+.pass-page main .button { min-height: 48px; padding: 12px 18px; font-size: 14px; line-height: 1.5; }
+.pass-page main .button--outline { color: #f3f5f0; border-color: #8ba396; background: transparent; }
+.pass-page main .button--outline:hover { background: #2e4939; }
+.pass-page main a:focus-visible,
+.pass-page main summary:focus-visible { outline: 2px solid #e3cc91; outline-offset: 4px; }
+
+.pass-page #plans { padding-top: 20px; }
+.pass-page .breadcrumb { margin: 0 0 12px; }
+.pass-toc { display: flex; flex-wrap: wrap; gap: 0 22px; margin-bottom: 28px; padding-bottom: 10px; border-bottom: 1px solid var(--line); }
+.pass-toc a { display: inline-flex; align-items: center; min-height: 44px; font-size: 14px; text-underline-offset: 5px; }
+.pass-page .pass-notice { margin-bottom: 20px; padding: 12px 16px; gap: 18px; font-size: 14px; border: 0; border-left: 3px solid #b7a374; background: #1c251f; }
+.pass-page .pass-notice__n { font-size: 23px; }
+.pass-page .pass-notice__n small { font-size: 12px; letter-spacing: 0; }
+.pass-caption { margin: 12px 0; color: var(--muted); font-size: 14px; }
+.pass-pricing { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.pass-option { display: flex; flex-direction: column; gap: 6px; padding: 22px; border: 1px solid #53685a; border-radius: 6px; background: #18251d; font-size: 14px; }
+.pass-option--start { border-color: #b7a374; background: #20392b; }
+.pass-page .pass-option h3 { margin: 0; color: var(--ink); font-family: inherit; font-size: 23px; }
+.pass-option__audience { color: #d4e2d8; font-size: 13px; }
+.pass-option__price { color: #fff; font-size: 32px; font-weight: 700; line-height: 1.4; font-variant-numeric: tabular-nums; }
+.pass-option__price span { display: inline-block; font-size: 14px; font-weight: 500; }
+.pass-option__renewal { color: #e0d3b4; }
+.pass-option__future { color: var(--muted); font-size: 13px; }
+.pass-option__link { display: flex; align-items: center; min-height: 48px; margin-top: auto; padding-top: 8px; color: #eef5f0; font-size: 14px; }
+.pass-notes { padding-left: 20px; margin: 18px 0; font-size: 14px; color: var(--muted); }
+.pass-notes li + li { margin-top: 5px; }
+
+.pass-services { margin: 0; }
+.pass-services > div { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.7fr); gap: 24px; padding: 18px 0; border-bottom: 1px solid var(--line); }
+.pass-services dt { font-size: 16px; font-weight: 700; color: var(--ink); }
+.pass-services dt span { display: block; margin-top: 4px; font-size: 14px; font-weight: 500; color: #bad7c5; }
+.pass-services dd { margin: 0; font-size: 15px; }
+.pass-services--extras { margin-top: 24px; border-top: 2px solid #758e7e; }
+.pass-page .checks { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 32px; }
+.pass-page .check { padding: 18px 0; border: 0; border-bottom: 1px solid var(--line); font-size: 15px; }
+.pass-page .check b { font-family: inherit; font-weight: 700; font-size: 16px; }
+
+.pass-comparisons { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 40px; }
+.pass-comparisons article { padding-top: 16px; border-top: 1px solid #708578; }
+.pass-page .pass-comparisons h3 { margin: 0 0 12px; font-size: 17px; font-family: inherit; line-height: 1.6; }
+.pass-comparisons dl { margin: 0; font-size: 15px; }
+.pass-comparisons dl > div { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+.pass-comparisons dd { margin: 0; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.pass-comparisons dl > div:last-child { margin-top: 8px; color: #cbdcb6; font-weight: 700; }
+
+.pass-payment-note { margin: 18px 0; padding-left: 16px; border-left: 3px solid #b7a374; font-size: 15px; }
+.pass-payment-note strong,
+.pass-after-join strong { display: block; margin-bottom: 6px; color: var(--ink); font-size: 17px; }
+.pass-after-join { margin-top: 24px; font-size: 15px; }
+.pass-page .pay-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 24px; }
+.pass-page .pay-grid .button { min-height: 86px; font-size: 16px; }
+.pass-page .pay-grid .button span { font-size: 14px; opacity: 1; }
+.pass-page .h2row { gap: 12px; }
+.pass-page .rab--inline { width: 44px; height: 44px; padding: 4px; margin: 0; }
+
+.pass-questions details { border-bottom: 1px solid #516557; }
+.pass-questions summary { cursor: pointer; min-height: 56px; padding: 18px 4px; font-weight: 700; font-size: 16px; color: var(--ink); }
+.pass-questions summary::marker { color: #bbd2c2; }
+.pass-questions details > div { padding: 0 4px 22px 22px; font-size: 15px; max-width: 780px; }
+.pass-page .legal-box { padding: 0; margin: 0; border: 0; font-size: 14px; color: var(--text); }
+.pass-page .legal-box dt { margin: 18px 0 5px; font-size: 15px; }
+.pass-page .legal-box dd { padding-bottom: 16px; border-bottom: 1px solid var(--line); max-width: 840px; }
+.pass-page .cta-band { padding: 0; background: transparent; gap: 24px; color: var(--text); }
+.pass-page .cta-band h2 { color: var(--ink); font-size: 26px; }
+.pass-page .cta-band p { margin-top: 12px; }
+.pass-page .cta-band .actions { display: grid; gap: 12px; }
+
+@media (max-width: 680px) {
+  .pass-page main .container,
+  .pass-page .pass-hero .hero__content { width: calc(100% - 32px); }
+  .pass-page main .section { padding: 36px 0; }
+  .pass-page main .section__head { margin-bottom: 18px; }
+  .pass-page main h2 { font-size: 24px; }
+  .pass-page .pass-hero { min-height: 0; }
+  .pass-page .pass-hero .hero__content { padding: 32px 0; }
+  .pass-page .pass-hero h1 { font-size: 32px; }
+  .pass-page .pass-hero__price strong { display: block; margin-left: 0; }
+  .pass-page .pass-hero .hero-actions { display: grid; grid-template-columns: 1fr; }
+  .pass-page .pass-hero .hero-actions .button { width: 100%; }
+  .pass-page #plans { padding-top: 18px; }
+  .pass-toc { gap: 0 20px; margin-bottom: 24px; }
+  .pass-page .pass-notice { gap: 8px; padding: 12px; }
+  .pass-page .pass-notice__n { display: flex; align-items: baseline; gap: 8px; font-size: 20px; }
+  .pass-pricing { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  .pass-option { padding: 18px; gap: 4px; }
+  .pass-services > div { grid-template-columns: minmax(0, 1fr); gap: 8px; padding: 16px 0; }
+  .pass-page .checks,
+  .pass-page .pay-grid,
+  .pass-comparisons { grid-template-columns: minmax(0, 1fr); }
+  .pass-page .cta-band h2 { font-size: 24px; }
+  .pass-page .header-actions .button { white-space: nowrap; font-size: 12px; padding: 8px 10px; }
+  .pass-page .brand-name { font-size: 20px; }
+  .pass-page .brand-logo { width: 24px; height: 24px; }
+}
+
+@media (max-width: 380px) {
+  .pass-page .header-inner { gap: 6px; }
+  .pass-page .brand { gap: 0; }
+  .pass-page .brand-logo { display: none; }
+  .pass-page .brand-name { font-size: 18px; letter-spacing: 0; }
+  .pass-page .header-actions { gap: 6px; }
+  .pass-page .header-actions .button { min-height: 44px; padding: 8px; }
+  .pass-page .lang-switch { min-width: 44px; min-height: 44px; padding: 0 8px; }
+  .pass-page .nav-toggle { width: 44px; height: 44px; }
+}
