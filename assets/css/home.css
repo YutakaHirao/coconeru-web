@@ -1,0 +1,23 @@
+@media (max-width: 680px) {
+  .home-page .pass-bubble {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 90px;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .home-page .pass-bubble__text {
+    min-width: 0;
+    max-width: none;
+  }
+
+  .home-page .pass-bubble__rabbit {
+    position: static;
+    width: 90px;
+    height: 110px;
+    object-fit: contain;
+    justify-self: end;
+    transform: none;
+  }
+}
