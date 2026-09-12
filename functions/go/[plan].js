@@ -13,7 +13,7 @@ const PLANS = {
   pass4: { id: 'RXLLFPJANP7XVQ3TTYUX3RC7', name: 'CoconeRu. Pass｜Pass 4（毎月4回 ¥18,800）', amount: 18800,
     desc: '毎月¥18,800。施術60分＋休息20分を月4回。2027年1月1日以降の新規は¥21,200、それまでのご入会は据え置き。' },
 };
-const TERMS = '更新の停止は次回更新日の前日まで（次の期から停止）。ご登録後の当期分のキャンセル・返金はできません。未消化分は次の期に1回まで繰越。プラン変更は次の更新から。会員制（ビジター利用可）。運営：株式会社キャリエ・レゾ／CoconeRu. 横須賀中央本店。';
+const TERMS = '更新の停止は次回更新日の前日まで（次の期から停止）。ご登録後の当期分のキャンセル・返金はできません。未消化分は次の期に1回まで繰越。プラン変更は次の更新から。会員制（都度利用可）。運営：株式会社キャリエ・レゾ／CoconeRu. 横須賀中央本店。';
 const LOCATION_ID = 'LAXRQHJ5W5YFX';
 const FALLBACK = 'https://coconeru.com/pass/#join';
 
