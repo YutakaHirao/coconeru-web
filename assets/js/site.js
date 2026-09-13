@@ -70,3 +70,11 @@ if (
     observer.observe(el);
   });
 }
+
+// Meta Pixel: 会員プランのサブスク登録ボタン（/go/…）クリックを InitiateCheckout として送る
+document.addEventListener("click", (event) => {
+  const link = event.target instanceof Element ? event.target.closest("a[href*=\"/go/\"]") : null;
+  if (!link || typeof window.fbq !== "function") return;
+  const plan = link.getAttribute("href").split("/go/")[1] || "";
+  window.fbq("track", "InitiateCheckout", { content_name: "CoconeRu. Pass", content_category: plan });
+});
